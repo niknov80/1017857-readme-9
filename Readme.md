@@ -1,14 +1,14 @@
 # Личный проект «Readme»
 
 * Студент: [Николай Новожилов](https://up.htmlacademy.ru/nodejs-2/9/user/1017857).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Семак](https://htmlacademy.ru/profile/id1451913).
 
----
+----
 
 _Не удаляйте и не изменяйте папки и файлы:_
 _`.editorconfig`, `.gitattributes`, `.gitignore`._
 
----
+----
 
 ## Памятка
 
