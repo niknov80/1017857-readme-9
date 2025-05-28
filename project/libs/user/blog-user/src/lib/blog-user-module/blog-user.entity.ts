@@ -10,8 +10,6 @@ export class BlogUserEntity extends Entity implements StorableEntity<AuthUser> {
   public createAt: Date;
   public publicationsCount: number;
   public subscribersCount: number;
-  public subscribers?: string[];
-  public subscriptions?: string[];
   public passwordHash: string;
 
   constructor(user?: AuthUser) {
