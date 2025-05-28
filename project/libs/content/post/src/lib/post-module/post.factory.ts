@@ -19,20 +19,15 @@ export class PostFactory implements EntityFactory<PostEntity> {
   }
 
   public createPostFromDto(dto: CreatePostDto, userId: string): PostEntity {
-    switch (dto.type) {
-      case PostType.Video:
-        return this.createFromVideo(dto as CreateVideoPostDto, userId);
-      case PostType.Text:
-        return this.createFromText(dto as CreateTextPostDto, userId);
-      case PostType.Quote:
-        return this.createFromQuote(dto as CreateQuotePostDto, userId);
-      case PostType.Photo:
-        return this.createFromPhoto(dto as CreatePhotoPostDto, userId);
-      case PostType.Link:
-        return this.createFromLink(dto as CreateLinkPostDto, userId);
-      default:
-        throw new Error(`Unsupported post type: ${dto.type}`);
-    }
+    const methods: Record<PostType, (dto: CreatePostDto, userId: string) => PostEntity> = {
+      [PostType.Video]: (dto, userId) => this.createFromVideo(dto as CreateVideoPostDto, userId),
+      [PostType.Text]: (dto, userId) => this.createFromText(dto as CreateTextPostDto, userId),
+      [PostType.Photo]: (dto, userId) => this.createFromPhoto(dto as CreatePhotoPostDto, userId),
+      [PostType.Quote]: (dto, userId) => this.createFromQuote(dto as CreateQuotePostDto, userId),
+      [PostType.Link]: (dto, userId) => this.createFromLink(dto as CreateLinkPostDto, userId),
+    };
+
+    return methods[dto.type](dto, userId);
   }
 
   private baseInit<T extends { status: PostStatus; publicationDate: Date; tags?: string[] | null }>(

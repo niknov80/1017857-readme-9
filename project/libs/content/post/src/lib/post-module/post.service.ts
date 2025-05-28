@@ -1,4 +1,4 @@
-import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
+import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { PostType } from '@project/core';
 import { CreatePostDto } from '../dto/create-post-dto/create-post.dto';
 import { POST_FORBIDDEN, POST_NOT_FOUND } from './post.constant';
@@ -65,10 +65,6 @@ export class PostService {
   }
 
   public async getByType(type: string, page = 1, limit = 25): Promise<PostEntity[]> {
-    if (!Object.values(PostType).includes(type as PostType)) {
-      throw new BadRequestException(`Недопустимый тип публикации: ${type}`);
-    }
-
     return this.postRepository.findByType(type as PostType, page, limit);
   }
 }

@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ### 📄 Получить пост по ID
-GET http://localhost:3000/api/posts/ead28cb3-20ab-49e9-9e83-bd3b983d4838 HTTP/1.1
+GET http://localhost:3000/api/posts/a28231e1-774c-4784-a1aa-d367c9a5f5f1 HTTP/1.1
 
 ### 📄 Удалить пост по ID
-DELETE http://localhost:3000/api/posts/ead28cb3-20ab-49e9-9e83-bd3b983d4838 HTTP/1.1
+DELETE http://localhost:3000/api/posts/ceef5cd3-3def-4dd9-8db0-337481b43a0d HTTP/1.1
