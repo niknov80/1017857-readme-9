@@ -1,0 +1,20 @@
+{
+  "name": "like",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/content/like/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/content/like",
+        "tsConfig": "libs/content/like/tsconfig.lib.json",
+        "packageJson": "libs/content/like/package.json",
+        "main": "libs/content/like/src/index.ts",
+        "assets": ["libs/content/like/*.md"]
+      }
+    }
+  }
+}
