@@ -1,0 +1,20 @@
+{
+  "name": "comment",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/content/comment/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/content/comment",
+        "tsConfig": "libs/content/comment/tsconfig.lib.json",
+        "packageJson": "libs/content/comment/package.json",
+        "main": "libs/content/comment/src/index.ts",
+        "assets": ["libs/content/comment/*.md"]
+      }
+    }
+  }
+}
