@@ -10,24 +10,13 @@ export const AuthenticationProperty = {
     },
     Validate: { Message: 'The email is not valid' },
   },
-  FirstName: {
+  Login: {
     Description: {
-      Description: 'User firstname',
+      Description: 'User login',
       Example: 'Archibald',
     },
     Validate: {
-      Message: 'First name is required',
-      MinLength: 3,
-      MaxLength: 50,
-    },
-  },
-  LastName: {
-    Description: {
-      Description: 'User lastname',
-      Example: 'Slonovsky',
-    },
-    Validate: {
-      Message: 'Last name is required',
+      Message: 'Login is required',
       MinLength: 3,
       MaxLength: 50,
     },

@@ -24,6 +24,7 @@
       "@project/data-access": ["libs/shared/data-access/src/index.ts"],
       "@project/helpers": ["libs/shared/helpers/src/index.ts"],
       "@project/like": ["libs/content/like/src/index.ts"],
+      "@project/models": ["libs/user/models/src/index.ts"],
       "@project/post": ["libs/content/post/src/index.ts"]
     }
   },

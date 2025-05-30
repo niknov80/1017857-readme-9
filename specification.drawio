@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
   <diagram name="Страница — 1" id="J0rWrrXV5R4WsdXxmljH">
-    <mxGraphModel dx="1901" dy="2132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="634" dy="1377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="u38V2FTheSog404dIB0E-1" value="User Service" style="swimlane;" parent="1" vertex="1">
-          <mxGeometry x="340" y="160" width="500" height="200" as="geometry" />
+          <mxGeometry x="340" y="160" width="500" height="230" as="geometry" />
         </mxCell>
         <mxCell id="AimUxgw-wjmq0Ns_UDIQ-84" value="" style="group" parent="u38V2FTheSog404dIB0E-1" vertex="1" connectable="0">
           <mxGeometry x="340" y="50" width="150" height="115" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry x="20.3125" y="36.666666666666664" width="310" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Tn7zoyamwGuNibsI6hVT-110" value="" style="group" vertex="1" connectable="0" parent="u38V2FTheSog404dIB0E-1">
-          <mxGeometry x="10" y="140" width="330" height="30" as="geometry" />
+          <mxGeometry x="10" y="130" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Tn7zoyamwGuNibsI6hVT-111" value="" style="group" vertex="1" connectable="0" parent="Tn7zoyamwGuNibsI6hVT-110">
           <mxGeometry width="330" height="30" as="geometry" />
@@ -64,8 +64,20 @@
         <mxCell id="u38V2FTheSog404dIB0E-5" value="&lt;strong data-start=&quot;1627&quot; data-end=&quot;1641&quot;&gt;BlogUserModule&lt;/strong&gt; — профиль пользователя" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;spacing=0;" parent="Tn7zoyamwGuNibsI6hVT-112" vertex="1">
           <mxGeometry x="11.851851851851851" y="5" width="260" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="Tn7zoyamwGuNibsI6hVT-152" value="" style="group" vertex="1" connectable="0" parent="u38V2FTheSog404dIB0E-1">
+          <mxGeometry x="10" y="180" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tn7zoyamwGuNibsI6hVT-153" value="" style="group" vertex="1" connectable="0" parent="Tn7zoyamwGuNibsI6hVT-152">
+          <mxGeometry width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tn7zoyamwGuNibsI6hVT-154" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Tn7zoyamwGuNibsI6hVT-153">
+          <mxGeometry width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tn7zoyamwGuNibsI6hVT-155" value="&lt;strong data-start=&quot;1627&quot; data-end=&quot;1641&quot;&gt;UserConfigModule&lt;/strong&gt; — Настройка приложения" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;spacing=0;" vertex="1" parent="Tn7zoyamwGuNibsI6hVT-153">
+          <mxGeometry x="12.222222222222221" y="5" width="280" height="20" as="geometry" />
+        </mxCell>
         <mxCell id="u38V2FTheSog404dIB0E-8" value="Content Service" style="swimlane;" parent="1" vertex="1">
-          <mxGeometry x="340" y="380" width="500" height="220" as="geometry" />
+          <mxGeometry x="340" y="430" width="500" height="220" as="geometry" />
         </mxCell>
         <mxCell id="AimUxgw-wjmq0Ns_UDIQ-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="u38V2FTheSog404dIB0E-8" vertex="1">
           <mxGeometry x="10" y="100" width="290" height="30" as="geometry" />
