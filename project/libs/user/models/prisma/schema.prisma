@@ -24,5 +24,29 @@ model BlogUser {
   subscribersCount  Int      @map("subscribers_count")
   passwordHash      String   @map("password_hash")
 
+  followedBy UserSubscription[] @relation("FollowedUser")
+  following  UserSubscription[] @relation("FollowerUser")
+
   @@map("blog_users")
+}
+
+model UserSubscription {
+  id             String             @id @default(uuid())
+  followerUserId String
+  followedUserId String
+  createdAt      DateTime           @default(now())
+  status         SubscriptionStatus @default(ACTIVE)
+
+  followerUser BlogUser @relation("FollowerUser", fields: [followerUserId], references: [id])
+  followedUser BlogUser @relation("FollowedUser", fields: [followedUserId], references: [id])
+
+  @@unique([followerUserId, followedUserId])
+  @@map("user_subscriptions")
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELLED
+  BLOCKED
+  PENDING
 }

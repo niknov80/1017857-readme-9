@@ -4,6 +4,7 @@ import { AuthenticationModule } from '@project/authentication';
 import { BlogUserModule } from '@project/blog-user';
 import { UserConfigModule } from '@project/config';
 import { PrismaClientModule } from '@project/models';
+import { UserSubscriptionModule } from '@project/subscriptions';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { PrismaClientModule } from '@project/models';
     BlogUserModule,
     AuthenticationModule,
     UserConfigModule,
+    UserSubscriptionModule,
   ],
   controllers: [],
   providers: [],

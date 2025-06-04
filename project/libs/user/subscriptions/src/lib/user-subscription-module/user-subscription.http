@@ -1,0 +1,29 @@
+### Subscribe (1 подписывается на 3)
+POST http://localhost:3000/api/subscriptions/follow
+Content-Type: application/json
+
+{
+  "followerUserId": "6d308040-96a2-4162-bea6-2338e9976540",
+  "followedUserId": "b3e2c8d6-9f6a-4b14-b1f2-4c77bff84b75"
+}
+
+### Unsubscribe (1 отписывается от 2)
+POST http://localhost:3000/api/subscriptions/unfollow
+Content-Type: application/json
+
+{
+  "followerUserId": "6d308040-96a2-4162-bea6-2338e9976540",
+  "followedUserId": "b3e2c8d6-9f6a-4b14-b1f2-4c77bff84b75"
+}
+
+### Check subscription (2 подписан на 1)
+GET http://localhost:3000/api/subscriptions/is-subscribed?followerUserId=ab04593b-da99-4fe3-8b4b-e06d82e2efdd&followedUserId=6d308040-96a2-4162-bea6-2338e9976540
+
+### Get followers (кто подписан на 1 → ожидаем [2, 3])
+GET http://localhost:3000/api/subscriptions/followers/6d308040-96a2-4162-bea6-2338e9976540
+
+### Get followings (на кого подписан 1 → ожидаем [2])
+GET http://localhost:3000/api/subscriptions/followings/6d308040-96a2-4162-bea6-2338e9976540
+
+### Get followers WITH PROFILE (на 1 → [2, 3] + профиль + isSubscribed)
+GET http://localhost:3000/api/subscriptions/followers-with-profile/6d308040-96a2-4162-bea6-2338e9976540?currentUserId=6d308040-96a2-4162-bea6-2338e9976540
