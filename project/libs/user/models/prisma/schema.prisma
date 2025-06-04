@@ -16,7 +16,7 @@ datasource db {
 
 model BlogUser {
   id                String   @id @default(uuid()) @map("id")
-  email             String
+  email             String   @unique
   login             String
   avatar            String
   createdAt         DateTime @default(now()) @map("created_at")

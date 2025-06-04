@@ -33,39 +33,34 @@
         }
       }
     },
-    "db:lint": {
+    "db:validate": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx prisma validate --schema ./schema.prisma",
-        "cwd": "libs/user/models/prisma"
+        "command": "npx dotenv -e libs/user/models/.env -- npx prisma validate --schema libs/user/models/prisma/schema.prisma"
       }
     },
     "db:migrate": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx prisma migrate dev --schema ./schema.prisma --skip-generate --skip-seed --name {args.name}",
-        "cwd": "libs/user/models/prisma"
+        "command": "npx dotenv -e libs/user/models/.env -- npx prisma migrate dev --schema libs/user/models/prisma/schema.prisma --skip-generate --skip-seed --name {args.name}"
       }
     },
     "db:reset": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx prisma migrate reset --schema ./schema.prisma --force --skip-generate --skip-seed",
-        "cwd": "libs/user/models/prisma"
+        "command": "npx dotenv -e libs/user/models/.env -- npx prisma migrate reset --schema libs/user/models/prisma/schema.prisma --force --skip-generate --skip-seed"
       }
     },
     "db:generate": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx prisma generate --schema ./schema.prisma",
-        "cwd": "libs/user/models/prisma"
+        "command": "npx dotenv -e libs/user/models/.env -- npx prisma generate --schema libs/user/models/prisma/schema.prisma"
       }
     },
     "db:seed": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx ts-node seed.ts",
-        "cwd": "libs/user/models/prisma",
+        "command": "npx dotenv -e libs/user/models/.env -- npx ts-node libs/user/models/prisma/seed.ts",
         "verbose": true
       }
     }

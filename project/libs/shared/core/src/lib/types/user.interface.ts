@@ -3,7 +3,7 @@ export interface User {
   email: string;
   login: string;
   avatar?: string;
-  createAt: Date;
+  createdAt: Date;
   publicationsCount: number;
   subscribersCount: number;
 }

@@ -13,8 +13,8 @@ const validationSchema = Joi.object({
   user: Joi.string().required(),
   password: Joi.string().required(),
   database: Joi.string().required(),
-  pgEmail: Joi.string().required(),
-  pgPassword: Joi.string().required(),
+  pgEmail: Joi.string(),
+  pgPassword: Joi.string(),
 });
 
 function validateConfig(config: postgresConfig): void {

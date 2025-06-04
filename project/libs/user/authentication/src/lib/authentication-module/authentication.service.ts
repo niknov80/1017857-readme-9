@@ -16,7 +16,7 @@ export class AuthenticationService {
       email,
       login: login,
       avatar,
-      createAt: new Date(),
+      createdAt: new Date(),
       publicationsCount: 0,
       subscribersCount: 0,
       passwordHash: '',
