@@ -1,0 +1,20 @@
+{
+  "name": "subscriptions",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user/subscriptions/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/user/subscriptions",
+        "tsConfig": "libs/user/subscriptions/tsconfig.lib.json",
+        "packageJson": "libs/user/subscriptions/package.json",
+        "main": "libs/user/subscriptions/src/index.ts",
+        "assets": ["libs/user/subscriptions/*.md"]
+      }
+    }
+  }
+}

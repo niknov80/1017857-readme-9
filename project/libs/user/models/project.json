@@ -1,0 +1,20 @@
+{
+  "name": "models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user/models/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/user/models",
+        "tsConfig": "libs/user/models/tsconfig.lib.json",
+        "packageJson": "libs/user/models/package.json",
+        "main": "libs/user/models/src/index.ts",
+        "assets": ["libs/user/models/*.md"]
+      }
+    }
+  }
+}

@@ -19,17 +19,10 @@ export class UserRdo {
 
   @Expose()
   @ApiProperty({
-    description: AuthenticationProperty.FirstName.Description.Description,
-    example: AuthenticationProperty.FirstName.Description.Example,
+    description: AuthenticationProperty.Login.Description.Description,
+    example: AuthenticationProperty.Login.Description.Example,
   })
-  public firstname: string;
-
-  @Expose()
-  @ApiProperty({
-    description: AuthenticationProperty.LastName.Description.Description,
-    example: AuthenticationProperty.LastName.Description.Example,
-  })
-  public lastname: string;
+  public login: string;
 
   @Expose()
   @ApiProperty({

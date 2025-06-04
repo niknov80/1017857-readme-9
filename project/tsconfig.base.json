@@ -19,11 +19,14 @@
       "@project/authentication": ["libs/user/authentication/src/index.ts"],
       "@project/blog-user": ["libs/user/blog-user/src/index.ts"],
       "@project/comment": ["libs/content/comment/src/index.ts"],
+      "@project/config": ["libs/user/config/src/index.ts"],
       "@project/core": ["libs/shared/core/src/index.ts"],
       "@project/data-access": ["libs/shared/data-access/src/index.ts"],
       "@project/helpers": ["libs/shared/helpers/src/index.ts"],
       "@project/like": ["libs/content/like/src/index.ts"],
-      "@project/post": ["libs/content/post/src/index.ts"]
+      "@project/models": ["libs/user/models/src/index.ts"],
+      "@project/post": ["libs/content/post/src/index.ts"],
+      "@project/subscriptions": ["libs/user/subscriptions/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

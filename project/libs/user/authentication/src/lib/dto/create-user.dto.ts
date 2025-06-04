@@ -15,28 +15,15 @@ export class CreateUserDto {
   @ApiProperty({
     required: true,
     type: String,
-    description: AuthenticationProperty.FirstName.Description.Description,
-    example: AuthenticationProperty.FirstName.Description.Example,
-    minLength: AuthenticationProperty.FirstName.Validate.MinLength,
-    maxLength: AuthenticationProperty.FirstName.Validate.MaxLength,
+    description: AuthenticationProperty.Login.Description.Description,
+    example: AuthenticationProperty.Login.Description.Example,
+    minLength: AuthenticationProperty.Login.Validate.MinLength,
+    maxLength: AuthenticationProperty.Login.Validate.MaxLength,
   })
   @IsString()
-  @MinLength(AuthenticationProperty.FirstName.Validate.MinLength)
-  @MaxLength(AuthenticationProperty.FirstName.Validate.MaxLength)
-  public firstName: string;
-
-  @ApiProperty({
-    required: true,
-    type: String,
-    description: AuthenticationProperty.LastName.Description.Description,
-    example: AuthenticationProperty.LastName.Description.Example,
-    minLength: AuthenticationProperty.LastName.Validate.MinLength,
-    maxLength: AuthenticationProperty.LastName.Validate.MaxLength,
-  })
-  @IsString()
-  @MinLength(AuthenticationProperty.FirstName.Validate.MinLength)
-  @MaxLength(AuthenticationProperty.FirstName.Validate.MaxLength)
-  public lastName: string;
+  @MinLength(AuthenticationProperty.Login.Validate.MinLength)
+  @MaxLength(AuthenticationProperty.Login.Validate.MaxLength)
+  public login: string;
 
   @ApiPropertyOptional({
     type: String,

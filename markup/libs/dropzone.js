@@ -189,7 +189,7 @@ var Dropzone = function (_Emitter) {
          * Whether you want files to be uploaded in chunks to your server. This can't be
          * used in combination with `uploadMultiple`.
          *
-         * See [chunksUploaded](#config-chunksUploaded) for the callback to finalise an upload.
+         * See [chunksUploaded](#userConfigModule-chunksUploaded) for the callback to finalise an upload.
          */
         chunking: false,
 
@@ -685,7 +685,7 @@ var Dropzone = function (_Emitter) {
          * provide all elements.
          *
          * If you want to use an actual HTML element instead of providing a String
-         * as a config option, you could create a div with the id `tpl`,
+         * as a userConfigModule option, you could create a div with the id `tpl`,
          * put the template inside it and provide the element like this:
          *
          *     document

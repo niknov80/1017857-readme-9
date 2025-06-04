@@ -10,14 +10,13 @@ export class AuthenticationService {
   constructor(private readonly blogUserRepository: BlogUserRepository) {}
 
   public async register(dto: CreateUserDto): Promise<BlogUserEntity> {
-    const { email, firstName, lastName, avatar, password } = dto;
+    const { email, login, avatar, password } = dto;
 
     const blogUser: AuthUser = {
       email,
-      firstName: firstName,
-      lastName: lastName,
+      login: login,
       avatar,
-      createAt: new Date(),
+      createdAt: new Date(),
       publicationsCount: 0,
       subscribersCount: 0,
       passwordHash: '',
