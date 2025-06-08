@@ -5,11 +5,12 @@ import { Repository } from './repository.interface';
 export abstract class BasePostgresRepository<
   T extends Entity & StorableEntity<ReturnType<T['toPOJO']>>,
   DocumentType = ReturnType<T['toPOJO']>,
+  ClientType = PrismaClientService,
 > implements Repository<T>
 {
   constructor(
     protected entityFactory: EntityFactory<T>,
-    protected readonly client: PrismaClientService,
+    protected readonly client: ClientType,
   ) {}
 
   protected createEntityFromDocument(document: DocumentType): T | null {

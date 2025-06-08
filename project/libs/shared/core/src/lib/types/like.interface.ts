@@ -1,6 +1,6 @@
 export interface Like {
-  id?: string; // Идентификатор записи лайка
-  postId: string; // Идентификатор поста
-  userId: string; // Идентификатор пользователя, который поставил лайк
-  createdAt: Date; // Дата создания записи лайка
+  id: string; // ID лайка
+  postId: string; // ID поста
+  userId: string; // ID пользователя
+  createdAt: Date; // Дата создания лайка
 }

@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../../node_modules/.prisma/content-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id     String     @id @default(uuid()) @map("id")
+  type   PostType   @map("type")
+  status PostStatus @map("status")
+
+  publicationDate DateTime @map("publication_date")
+  createdAt       DateTime @map("created_at")
+
+  tags String[] @map("tags")
+
+  userId String @map("user_id")
+
+  isRepost     Boolean @map("is_repost")
+  repostId     String? @map("repost_id")
+  repostUserId String? @map("repost_user_id")
+
+  commentCount Int? @map("comment_count")
+  likeCount    Int? @map("like_count")
+  viewCount    Int? @map("view_count")
+  repostCount  Int? @map("repost_count")
+
+  videoTitle String? @map("video_title")
+  videoUrl   String? @map("video_url")
+
+  textTitle        String? @map("text_title")
+  textAnnouncement String? @map("text_announcement")
+  textDescription  String? @map("text_description")
+
+  quoteText   String? @map("quote_text")
+  quoteAuthor String? @map("quote_author")
+
+  photoId String? @map("photo_id")
+
+  linkUrl         String? @map("link_url")
+  linkDescription String? @map("link_description")
+
+  Comment Comment[]
+  Like    Like[]
+
+  @@map("posts")
+}
+
+model Comment {
+  id        String   @id @default(uuid()) @map("id")
+  postId    String   @map("post_id")
+  authorId  String   @map("author_id")
+  text      String   @map("text") @db.Text
+  createdAt DateTime @default(now()) @map("created_at")
+
+  post Post @relation(fields: [postId], references: [id])
+
+  @@map("comments")
+}
+
+model Like {
+  id        String   @id @default(uuid()) @map("id")
+  postId    String   @map("post_id")
+  userId    String   @map("user_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  post Post @relation(fields: [postId], references: [id])
+
+  @@unique([postId, userId])
+  @@map("likes")
+}
+
+enum PostType {
+  video
+  text
+  photo
+  link
+  quote
+}
+
+enum PostStatus {
+  published
+  draft
+}

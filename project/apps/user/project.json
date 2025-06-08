@@ -8,18 +8,24 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "webpack-cli build",
-        "args": ["node-env=production"]
+        "args": [
+          "node-env=production"
+        ]
       },
       "configurations": {
         "development": {
-          "args": ["node-env=development"]
+          "args": [
+            "node-env=development"
+          ]
         }
       }
     },
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
-      "dependsOn": ["build"],
+      "dependsOn": [
+        "build"
+      ],
       "options": {
         "buildTarget": "user:build",
         "runBuildTargetDependencies": false
@@ -62,6 +68,24 @@
       "options": {
         "command": "npx dotenv -e libs/user/models/.env -- npx ts-node libs/user/models/prisma/seed.ts",
         "verbose": true
+      }
+    },
+    "docker:up": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env --project-name readme-user up -d"
+      }
+    },
+    "docker:down": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env down"
+      }
+    },
+    "docker:restart": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env down && docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env --project-name readme-user up -d"
       }
     }
   },

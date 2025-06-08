@@ -1,0 +1,14 @@
+### Create comment
+POST http://localhost:3001/api/comments
+Content-Type: application/json
+
+{
+  "postId": "44444444-aaaa-bbbb-cccc-444444444444",
+  "text": "Отличный пост! Спасибо за информацию."
+}
+
+### Delete comment
+DELETE http://localhost:3001/api/comments/ce08b36e-db78-4f1c-b268-3a19cd2a3263
+
+### Get comments by post
+GET http://localhost:3001/api/comments/post/11111111-aaaa-bbbb-cccc-111111111111?page=1&limit=10
