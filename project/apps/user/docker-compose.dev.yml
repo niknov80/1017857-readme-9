@@ -13,14 +13,14 @@ services:
       - readme.postgres.user:/var/lib/postgresql/data
 
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d {POSTGRES_PASSWORD}" ]
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d {POSTGRES_DB}" ]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 10s
 
     networks:
-      - readme.user
+      - readme.network
 
   readme.user.pgadmin:
     image: dpage/pgadmin4
@@ -34,11 +34,11 @@ services:
     depends_on:
       - readme.user.postgres
     networks:
-      - readme.user
+      - readme.network
 
 volumes:
   readme.postgres.user:
 
 networks:
-  readme.user:
+  readme.network:
       driver: bridge

@@ -63,6 +63,24 @@
         "command": "npx dotenv -e libs/user/models/.env -- npx ts-node libs/user/models/prisma/seed.ts",
         "verbose": true
       }
+    },
+    "docker:up": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env --project-name readme-user up -d"
+      }
+    },
+    "docker:down": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env down"
+      }
+    },
+    "docker:restart": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env down && docker compose --file ./apps/user/docker-compose.dev.yml --env-file ./apps/user/user.env --project-name readme-user up -d",
+      }
     }
   },
   "tags": []

@@ -1,0 +1,20 @@
+{
+  "name": "content-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/content/content-models/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/content/content-models",
+        "tsConfig": "libs/content/content-models/tsconfig.lib.json",
+        "packageJson": "libs/content/content-models/package.json",
+        "main": "libs/content/content-models/src/index.ts",
+        "assets": ["libs/content/content-models/*.md"]
+      }
+    }
+  }
+}

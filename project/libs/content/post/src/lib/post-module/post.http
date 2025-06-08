@@ -1,18 +1,60 @@
-### 📌 Создание поста
-POST http://localhost:3000/api/posts HTTP/1.1
+### Create Post
+POST http://localhost:3001/api/posts
 Content-Type: application/json
 
 {
   "type": "video",
   "status": "published",
-  "publicationDate": "2024-01-01T00:00:00.000Z",
-  "tags": ["nestjs", "blog"],
-  "videoTitle": "My Awesome Video",
-  "videoUrl": "https://youtube.com/watch?v=xyz123"
+  "publicationDate": "2024-06-08T12:00:00.000Z",
+  "tags": ["test", "nestjs"],
+  "videoTitle": "Test Video Title",
+  "videoUrl": "https://youtube.com/watch?v=dQw4w9WgXcQ"
 }
 
-### 📄 Получить пост по ID
-GET http://localhost:3000/api/posts/a28231e1-774c-4784-a1aa-d367c9a5f5f1 HTTP/1.1
+###
 
-### 📄 Удалить пост по ID
-DELETE http://localhost:3000/api/posts/ceef5cd3-3def-4dd9-8db0-337481b43a0d HTTP/1.1
+### Update Post
+PUT http://localhost:3001/api/posts/8310b1d3-7b23-4b9b-94ad-5183bb297158
+Content-Type: application/json
+
+{
+  "status": "draft",
+  "tags": ["updated", "tag"],
+  "videoTitle": "Updated Video Title",
+  "videoUrl": "https://youtube.com/watch?v=dQw4w9WgXcQ"
+}
+
+###
+
+### Delete Post
+DELETE http://localhost:3001/api/posts/8310b1d3-7b23-4b9b-94ad-5183bb297158
+
+###
+
+### Get Post by ID
+GET http://localhost:3001/api/posts/33333333-aaaa-bbbb-cccc-333333333333
+
+###
+
+### Get Feed
+GET http://localhost:3001/api/posts/feed?page=1&limit=10&sortBy=date
+
+###
+
+### Get Posts by User
+GET http://localhost:3001/api/posts/user/6d308040-96a2-4162-bea6-2338e9976540?page=1&limit=10&sortBy=date
+
+###
+
+### Get Drafts by User
+GET http://localhost:3001/api/posts/user/6d308040-96a2-4162-bea6-2338e9976540/drafts
+
+###
+
+### Get Posts by Tag
+GET http://localhost:3001/api/posts/tag/fun?page=1&limit=10
+
+###
+
+### Get Posts by Type
+GET http://localhost:3001/api/posts/type/video?page=1&limit=10

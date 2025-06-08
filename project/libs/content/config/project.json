@@ -1,0 +1,20 @@
+{
+  "name": "@project/content-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/content/config/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/content/config",
+        "tsConfig": "libs/content/config/tsconfig.lib.json",
+        "packageJson": "libs/content/config/package.json",
+        "main": "libs/content/config/src/index.ts",
+        "assets": ["libs/content/config/*.md"]
+      }
+    }
+  }
+}
