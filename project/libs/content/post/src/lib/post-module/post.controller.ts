@@ -1,7 +1,21 @@
-import { Body, Controller, Delete, Get, Param, ParseUUIDPipe, Post as HttpPost, Put, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  ParseEnumPipe,
+  ParseUUIDPipe,
+  Post as HttpPost,
+  Put,
+  Query,
+} from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
+import { PostType } from '@project/core';
 import { fillDto } from '@project/helpers';
 import { CreatePostDto } from '../dto/create-post-dto/create-post.dto';
+import { PaginationQueryDto } from '../dto/pagination-query.dto';
+import { PostQueryDto } from '../dto/post-query.dto';
 import { UpdatePostDto } from '../dto/update-post-dto/update-post.dto';
 import { resolvePostRdo } from '../rdo/resolve-post.rdo';
 import { PostResponse } from './post.response';
@@ -41,12 +55,8 @@ export class PostController {
 
   @Get('feed')
   @ApiResponse(PostResponse.Listed)
-  public async getFeed(
-    @Query('page') page = 1,
-    @Query('limit') limit = 25,
-    @Query('sortBy') sortBy: 'date' | 'likes' | 'comments' = 'date',
-  ) {
-    const posts = await this.postService.getFeed(Number(page), Number(limit), sortBy);
+  public async getFeed(@Query() query: PostQueryDto) {
+    const posts = await this.postService.getFeed(query.page, query.limit, query.sortBy);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
       return fillDto(rdoClass, post.toPOJO());
@@ -55,13 +65,8 @@ export class PostController {
 
   @Get('user/:userId')
   @ApiResponse(PostResponse.Listed)
-  public async getByUser(
-    @Param('userId') userId: string,
-    @Query('page') page = 1,
-    @Query('limit') limit = 25,
-    @Query('sortBy') sortBy: 'date' | 'likes' | 'comments' = 'date',
-  ) {
-    const posts = await this.postService.getByUser(userId, Number(page), Number(limit), sortBy);
+  public async getByUser(@Param('userId', ParseUUIDPipe) userId: string, @Query() query: PostQueryDto) {
+    const posts = await this.postService.getByUser(userId, query.page, query.limit, query.sortBy);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
       return fillDto(rdoClass, post.toPOJO());
@@ -70,7 +75,7 @@ export class PostController {
 
   @Get('user/:userId/drafts')
   @ApiResponse(PostResponse.Listed)
-  public async getDrafts(@Param('userId') userId: string) {
+  public async getDrafts(@Param('userId', ParseUUIDPipe) userId: string) {
     const posts = await this.postService.getDrafts(userId);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
@@ -80,8 +85,8 @@ export class PostController {
 
   @Get('tag/:tag')
   @ApiResponse(PostResponse.Listed)
-  public async getByTag(@Param('tag') tag: string, @Query('page') page = 1, @Query('limit') limit = 25) {
-    const posts = await this.postService.getByTag(tag, Number(page), Number(limit));
+  public async getByTag(@Param('tag') tag: string, @Query() query: PaginationQueryDto) {
+    const posts = await this.postService.getByTag(tag, query.page, query.limit);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
       return fillDto(rdoClass, post.toPOJO());
@@ -90,8 +95,11 @@ export class PostController {
 
   @Get('type/:type')
   @ApiResponse(PostResponse.Listed)
-  public async getByType(@Param('type') type: string, @Query('page') page = 1, @Query('limit') limit = 25) {
-    const posts = await this.postService.getByType(type, Number(page), Number(limit));
+  public async getByType(
+    @Param('type', new ParseEnumPipe(PostType)) type: PostType,
+    @Query() query: PaginationQueryDto,
+  ) {
+    const posts = await this.postService.getByType(type, query.page, query.limit);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
       return fillDto(rdoClass, post.toPOJO());

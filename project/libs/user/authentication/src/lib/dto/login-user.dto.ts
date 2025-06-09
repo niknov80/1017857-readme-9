@@ -9,6 +9,7 @@ export class LoginUserDto {
     description: AuthenticationProperty.Email.Description.Description,
     example: AuthenticationProperty.Email.Description.Example,
   })
+  @IsString()
   @IsEmail({}, { message: AuthenticationProperty.Email.Validate.Message })
   public email: string;
 

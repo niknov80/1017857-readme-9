@@ -5,8 +5,8 @@ import { SubscriptionProperty } from '../user-subscription-module/user-subscript
 export class FollowersRdo {
   @Expose()
   @ApiProperty({
-    description: SubscriptionProperty.UserIds,
-    example: ['user-id-1', 'user-id-2', 'user-id-3'],
+    description: SubscriptionProperty.Followers.Description.Description,
+    example: SubscriptionProperty.Followers.Description.Example,
   })
   public userIds: string[];
 }

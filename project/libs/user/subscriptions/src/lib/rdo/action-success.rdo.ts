@@ -5,8 +5,8 @@ import { SubscriptionProperty } from '../user-subscription-module/user-subscript
 export class ActionSuccessRdo {
   @Expose()
   @ApiProperty({
-    description: SubscriptionProperty.Success,
-    example: true,
+    description: SubscriptionProperty.ActionSuccess.Description.Description,
+    example: SubscriptionProperty.ActionSuccess.Description.Example,
   })
   public success: boolean;
 }

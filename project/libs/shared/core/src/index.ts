@@ -10,6 +10,7 @@ export { UserSubscription } from './lib/types/user-subscription.interface';
 
 export { PostType } from './lib/types/post-type.enum';
 export { PostStatus } from './lib/types/post-status.enum';
+export { PostSortBy } from './lib/types/post-sort-by.enum';
 export { SubscriptionStatus } from './lib/types/subscription-status.enum';
 
 export { StorableEntity } from './lib/interfaces/storable-entity.interface';

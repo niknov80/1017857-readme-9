@@ -1,5 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Expose } from 'class-transformer';
+import { SubscriptionProperty } from '../user-subscription-module/user-subscription.constant';
 
 /**
  * Профиль подписчика для отображения на странице "Подписчики".
@@ -7,36 +8,36 @@ import { Expose } from 'class-transformer';
 export class FollowerProfileRdo {
   @Expose()
   @ApiProperty({
-    description: 'ID пользователя',
-    example: '6d308040-96a2-4162-bea6-2338e9976540',
+    description: SubscriptionProperty.FollowerProfile.userId.Description,
+    example: SubscriptionProperty.FollowerProfile.userId.Example,
   })
   public userId: string;
 
   @Expose()
   @ApiProperty({
-    description: 'Логин пользователя',
-    example: 'Первый Пользователь',
+    description: SubscriptionProperty.FollowerProfile.login.Description,
+    example: SubscriptionProperty.FollowerProfile.login.Example,
   })
   public login: string;
 
   @Expose()
   @ApiProperty({
-    description: 'Количество публикаций пользователя',
-    example: 10,
+    description: SubscriptionProperty.FollowerProfile.publicationsCount.Description,
+    example: SubscriptionProperty.FollowerProfile.publicationsCount.Example,
   })
   public publicationsCount: number;
 
   @Expose()
   @ApiProperty({
-    description: 'Количество подписчиков пользователя',
-    example: 5,
+    description: SubscriptionProperty.FollowerProfile.subscribersCount.Description,
+    example: SubscriptionProperty.FollowerProfile.subscribersCount.Example,
   })
   public subscribersCount: number;
 
   @Expose()
   @ApiProperty({
-    description: 'Признак, подписан ли текущий пользователь на этого пользователя',
-    example: true,
+    description: SubscriptionProperty.FollowerProfile.isSubscribed.Description,
+    example: SubscriptionProperty.FollowerProfile.isSubscribed.Example,
   })
   public isSubscribed: boolean;
 }
