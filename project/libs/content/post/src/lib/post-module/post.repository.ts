@@ -246,14 +246,11 @@ export class PostRepository extends BasePostgresRepository<PostEntity, Post, Pri
     likeCount?: 'asc' | 'desc';
     commentCount?: 'asc' | 'desc';
   } {
-    switch (sortBy) {
-      case 'likes':
-        return { likeCount: 'desc' };
-      case 'comments':
-        return { commentCount: 'desc' };
-      case 'date':
-      default:
-        return { publicationDate: 'desc' };
-    }
+    const sorts = {
+      likes: { likeCount: 'desc' },
+      comments: { commentCount: 'desc' },
+      default: { publicationDate: 'desc' },
+    };
+    return sorts[sortBy] ?? sorts.default;
   }
 }
