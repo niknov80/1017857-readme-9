@@ -1,0 +1,8 @@
+### Like post
+POST http://localhost:3001/api/likes/22222222-aaaa-bbbb-cccc-222222222222
+
+### Dislike post
+DELETE http://localhost:3001/api/likes/22222222-aaaa-bbbb-cccc-222222222222
+
+### Is liked?
+GET http://localhost:3001/api/likes/33333333-aaaa-bbbb-cccc-333333333333
