@@ -1,12 +1,4 @@
-import { Entity, StorableEntity } from '@project/core';
-
-export interface Comment {
-  id: string;
-  postId: string;
-  authorId: string;
-  text: string;
-  createdAt: Date;
-}
+import { Comment, Entity, StorableEntity } from '@project/core';
 
 export class CommentEntity extends Entity implements StorableEntity<Comment> {
   public postId: string;

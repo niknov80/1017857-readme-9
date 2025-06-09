@@ -45,9 +45,16 @@ export class CommentController {
    * @returns Список комментариев.
    */
   @Get('post/:postId')
-  @ApiResponse({ status: 200, description: 'Список комментариев', type: [CommentRdo] })
+  @ApiResponse({ status: 200, description: 'Список комментариев с пагинацией' })
   public async findByPost(@Param('postId', ParseUUIDPipe) postId: string, @Query() query: CommentQueryDto) {
-    const comments = await this.commentService.findByPost(postId, query.page, query.limit);
-    return comments.map((comment) => fillDto(CommentRdo, comment.toPOJO()));
+    const result = await this.commentService.findByPost(postId, query.page, query.limit);
+
+    return {
+      items: result.items.map((comment) => fillDto(CommentRdo, comment.toPOJO())),
+      page: result.page,
+      limit: result.limit,
+      totalCount: result.totalCount,
+      totalPages: result.totalPages,
+    };
   }
 }

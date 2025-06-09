@@ -7,6 +7,7 @@ export { Post } from './lib/types/post.interface';
 export { Like } from './lib/types/like.interface';
 export { Comment } from './lib/types/comment.interface';
 export { UserSubscription } from './lib/types/user-subscription.interface';
+export { PaginatedComment } from './lib/types/paginated-comment.interface';
 
 export { PostType } from './lib/types/post-type.enum';
 export { PostStatus } from './lib/types/post-status.enum';
