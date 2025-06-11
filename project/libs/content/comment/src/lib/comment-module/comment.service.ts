@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { PaginatedComment } from '@project/core';
 import { CreateCommentDto } from '../dto/create-comment.dto';
 import { CommentEntity } from './comment.entity';
 import { CommentFactory } from './comment.factory';
 import { CommentRepository } from './comment.repository';
+import { PaginatedComment } from './paginated-comment.interface';
 
 /**
  * Сервис для работы с комментариями.

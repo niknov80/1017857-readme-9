@@ -1,9 +1,10 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { fillDto } from '@project/helpers';
 import { changePasswordDto } from '../dto/change-password.dto';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { LoginUserDto } from '../dto/login-user.dto';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
 import { LoggedUserRdo } from '../rdo/logged-user.rdo';
 import { UserRdo } from '../rdo/user.rdo';
 import { AuthenticationResponse } from './authentication.response';
@@ -30,9 +31,11 @@ export class AuthenticationController {
   @ApiResponse(AuthenticationResponse.UserNotFound)
   public async login(@Body() dto: LoginUserDto) {
     const verifiedUser = await this.authService.verifyUser(dto);
-    return fillDto(UserRdo, verifiedUser.toPOJO());
+    const userToken = await this.authService.createUserToken(verifiedUser);
+    return fillDto(LoggedUserRdo, { ...verifiedUser.toPOJO(), ...userToken });
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   @ApiResponse(AuthenticationResponse.UserFound)
   @ApiResponse(AuthenticationResponse.UserNotFound)
