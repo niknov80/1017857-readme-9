@@ -57,20 +57,32 @@ export class PostController {
   @ApiResponse(PostResponse.Listed)
   public async getFeed(@Query() query: PostQueryDto) {
     const posts = await this.postService.getFeed(query.page, query.limit, query.sortBy);
-    return posts.map((post) => {
-      const rdoClass = resolvePostRdo(post);
-      return fillDto(rdoClass, post.toPOJO());
-    });
+    return {
+      items: posts.items.map((post) => {
+        const rdoClass = resolvePostRdo(post);
+        return fillDto(rdoClass, post.toPOJO());
+      }),
+      page: posts.page,
+      limit: posts.limit,
+      totalCount: posts.totalCount,
+      totalPages: posts.totalPages,
+    };
   }
 
   @Get('user/:userId')
   @ApiResponse(PostResponse.Listed)
   public async getByUser(@Param('userId', ParseUUIDPipe) userId: string, @Query() query: PostQueryDto) {
     const posts = await this.postService.getByUser(userId, query.page, query.limit, query.sortBy);
-    return posts.map((post) => {
-      const rdoClass = resolvePostRdo(post);
-      return fillDto(rdoClass, post.toPOJO());
-    });
+    return {
+      items: posts.items.map((post) => {
+        const rdoClass = resolvePostRdo(post);
+        return fillDto(rdoClass, post.toPOJO());
+      }),
+      page: posts.page,
+      limit: posts.limit,
+      totalCount: posts.totalCount,
+      totalPages: posts.totalPages,
+    };
   }
 
   @Get('user/:userId/drafts')
@@ -87,10 +99,16 @@ export class PostController {
   @ApiResponse(PostResponse.Listed)
   public async getByTag(@Param('tag') tag: string, @Query() query: PaginationQueryDto) {
     const posts = await this.postService.getByTag(tag, query.page, query.limit);
-    return posts.map((post) => {
-      const rdoClass = resolvePostRdo(post);
-      return fillDto(rdoClass, post.toPOJO());
-    });
+    return {
+      items: posts.items.map((post) => {
+        const rdoClass = resolvePostRdo(post);
+        return fillDto(rdoClass, post.toPOJO());
+      }),
+      page: posts.page,
+      limit: posts.limit,
+      totalCount: posts.totalCount,
+      totalPages: posts.totalPages,
+    };
   }
 
   @Get('type/:type')
@@ -100,10 +118,16 @@ export class PostController {
     @Query() query: PaginationQueryDto,
   ) {
     const posts = await this.postService.getByType(type, query.page, query.limit);
-    return posts.map((post) => {
-      const rdoClass = resolvePostRdo(post);
-      return fillDto(rdoClass, post.toPOJO());
-    });
+    return {
+      items: posts.items.map((post) => {
+        const rdoClass = resolvePostRdo(post);
+        return fillDto(rdoClass, post.toPOJO());
+      }),
+      page: posts.page,
+      limit: posts.limit,
+      totalCount: posts.totalCount,
+      totalPages: posts.totalPages,
+    };
   }
 
   @Get(':id')

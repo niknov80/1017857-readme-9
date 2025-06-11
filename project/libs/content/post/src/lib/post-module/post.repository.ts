@@ -238,6 +238,43 @@ export class PostRepository extends BasePostgresRepository<PostEntity, Post, Pri
     );
   }
 
+  public async countPublished(): Promise<number> {
+    return this.client.post.count({
+      where: {
+        status: PostStatus.Published,
+      },
+    });
+  }
+
+  public async countPublishedByUserId(userId: string): Promise<number> {
+    return this.client.post.count({
+      where: {
+        userId,
+        status: PostStatus.Published,
+      },
+    });
+  }
+
+  public async countByType(type: PostType): Promise<number> {
+    return this.client.post.count({
+      where: {
+        type: type as unknown as PrismaPostType,
+        status: PostStatus.Published,
+      },
+    });
+  }
+
+  public async countByTag(tag: string): Promise<number> {
+    return this.client.post.count({
+      where: {
+        status: PostStatus.Published,
+        tags: {
+          has: tag.toLowerCase(),
+        },
+      },
+    });
+  }
+
   /**
    * Вспомогательная функция для сортировки.
    */
