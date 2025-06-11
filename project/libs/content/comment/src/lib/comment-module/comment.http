@@ -1,14 +1,16 @@
 ### Create comment
 POST http://localhost:3001/api/comments
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxNzg1LCJleHAiOjE3NDk2NjIwODV9.0T5TuM7xvs5B62bGegns8-UE_YmCQNBe1uhmaW8nwFw
 
 {
-  "postId": "44444444-aaaa-bbbb-cccc-444444444444",
+  "postId": "a673fe98-bbc9-442e-a3dd-d546b7e721cf",
   "text": "Отличный пост! Спасибо за информацию."
 }
 
 ### Delete comment
-DELETE http://localhost:3001/api/comments/ce08b36e-db78-4f1c-b268-3a19cd2a3263
+DELETE http://localhost:3001/api/comments/11faa0a1-11f8-456f-8250-42189c8edc1a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxMzg0LCJleHAiOjE3NDk2NjE2ODR9.vdwl3C68JqPMvBZpUDn9J_L_R0O3RQ7yc8vI0TLEXsM
 
 ### Get comments by post
-GET http://localhost:3001/api/comments/post/11111111-aaaa-bbbb-cccc-111111111111?page=1&limit=10
+GET http://localhost:3001/api/comments/post/a673fe98-bbc9-442e-a3dd-d546b7e721cf

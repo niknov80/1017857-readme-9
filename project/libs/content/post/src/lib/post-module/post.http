@@ -1,6 +1,7 @@
 ### Create Post
 POST http://localhost:3001/api/posts
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxMzg0LCJleHAiOjE3NDk2NjE2ODR9.vdwl3C68JqPMvBZpUDn9J_L_R0O3RQ7yc8vI0TLEXsM
 
 {
   "type": "video",
@@ -14,8 +15,9 @@ Content-Type: application/json
 ###
 
 ### Update Post
-PUT http://localhost:3001/api/posts/8310b1d3-7b23-4b9b-94ad-5183bb297158
+PUT http://localhost:3001/api/posts/a673fe98-bbc9-442e-a3dd-d546b7e721cf
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxMzg0LCJleHAiOjE3NDk2NjE2ODR9.vdwl3C68JqPMvBZpUDn9J_L_R0O3RQ7yc8vI0TLEXsM
 
 {
   "status": "draft",

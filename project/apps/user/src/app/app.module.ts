@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AuthenticationModule } from '@project/authentication';
 import { BlogUserModule } from '@project/blog-user';
-import { UserConfigModule } from '@project/config';
+import { jwtConfig, UserConfigModule } from '@project/config';
 import { PrismaClientModule } from '@project/models';
 import { UserSubscriptionModule } from '@project/subscriptions';
 
@@ -11,6 +11,7 @@ import { UserSubscriptionModule } from '@project/subscriptions';
     ConfigModule.forRoot({
       envFilePath: ['libs/user/models/.env', 'apps/user/user.env', '.env'],
       isGlobal: true,
+      load: [jwtConfig],
     }),
     PrismaClientModule,
     BlogUserModule,

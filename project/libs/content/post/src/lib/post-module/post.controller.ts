@@ -9,9 +9,12 @@ import {
   Post as HttpPost,
   Put,
   Query,
+  Req,
+  UseGuards,
 } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
-import { PostType } from '@project/core';
+import { JwtAuthGuard } from '@project/authentication';
+import { PostType, RequestWithUser } from '@project/core';
 import { fillDto } from '@project/helpers';
 import { CreatePostDto } from '../dto/create-post-dto/create-post.dto';
 import { PaginationQueryDto } from '../dto/pagination-query.dto';
@@ -27,29 +30,32 @@ export class PostController {
   constructor(private readonly postService: PostService) {}
 
   @HttpPost()
+  @UseGuards(JwtAuthGuard)
   @ApiResponse(PostResponse.Created)
   @ApiResponse(PostResponse.BadRequest)
-  public async create(@Body() dto: CreatePostDto) {
-    const userId = 'mock-user-id';
+  public async create(@Body() dto: CreatePostDto, @Req() req: RequestWithUser) {
+    const userId = req.user.sub;
     const post = await this.postService.create(dto, userId);
     const rdoClass = resolvePostRdo(post);
     return fillDto(rdoClass, post.toPOJO());
   }
 
   @Put(':id')
+  @UseGuards(JwtAuthGuard)
   @ApiResponse(PostResponse.Updated)
   @ApiResponse(PostResponse.NotFound)
-  public async update(@Param('id', ParseUUIDPipe) id: string, @Body() dto: UpdatePostDto) {
-    const userId = 'mock-user-id';
+  public async update(@Param('id', ParseUUIDPipe) id: string, @Body() dto: UpdatePostDto, @Req() req: RequestWithUser) {
+    const userId = req.user.sub;
     const post = await this.postService.update(id, dto, userId);
     const rdoClass = resolvePostRdo(post);
     return fillDto(rdoClass, post.toPOJO());
   }
 
   @Delete(':id')
+  @UseGuards(JwtAuthGuard)
   @ApiResponse(PostResponse.Deleted)
-  public async delete(@Param('id', ParseUUIDPipe) id: string) {
-    const userId = 'mock-user-id';
+  public async delete(@Param('id', ParseUUIDPipe) id: string, @Req() req: RequestWithUser) {
+    const userId = req.user.sub;
     await this.postService.delete(id, userId);
   }
 
@@ -85,9 +91,11 @@ export class PostController {
     };
   }
 
-  @Get('user/:userId/drafts')
+  @Get('user/drafts')
+  @UseGuards(JwtAuthGuard)
   @ApiResponse(PostResponse.Listed)
-  public async getDrafts(@Param('userId', ParseUUIDPipe) userId: string) {
+  public async getDrafts(@Req() req: RequestWithUser) {
+    const userId = req.user.sub;
     const posts = await this.postService.getDrafts(userId);
     return posts.map((post) => {
       const rdoClass = resolvePostRdo(post);
