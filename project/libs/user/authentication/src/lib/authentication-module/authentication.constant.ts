@@ -34,7 +34,7 @@ export const AuthenticationProperty = {
   },
   Password: {
     Description: {
-      Description: 'User password (min 8 characters, at least one letter and one number)',
+      Description: 'User password (min 6 characters max 12, at least one letter and one number)',
       Example: 'qwerty123',
     },
     Validate: {
@@ -47,7 +47,7 @@ export const AuthenticationProperty = {
         Message: 'Password must be at most 12 characters long',
       },
       RegExp: {
-        Value: /^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d@$!%*?&]{8,}$/,
+        Value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{6,12}$/,
         Message: 'Password must contain at least one letter and one number',
       },
     },

@@ -5,8 +5,8 @@ import { SubscriptionProperty } from '../user-subscription-module/user-subscript
 export class IsSubscribedRdo {
   @Expose()
   @ApiProperty({
-    description: SubscriptionProperty.IsSubscribed,
-    example: true,
+    description: SubscriptionProperty.IsSubscribed.Description.Description,
+    example: SubscriptionProperty.IsSubscribed.Description.Example,
   })
   public isSubscribed: boolean;
 }

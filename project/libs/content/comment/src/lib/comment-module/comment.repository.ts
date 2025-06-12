@@ -61,4 +61,10 @@ export class CommentRepository {
 
     return comments.map((comment) => this.commentFactory.create(comment));
   }
+
+  public async countByPost(postId: string): Promise<number> {
+    return this.prisma.comment.count({
+      where: { postId },
+    });
+  }
 }

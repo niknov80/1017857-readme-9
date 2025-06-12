@@ -1,23 +1,23 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString } from 'class-validator';
+import { IsUUID } from 'class-validator';
 import { SubscriptionProperty } from '../user-subscription-module/user-subscription.constant';
 
 export class FollowDto {
   @ApiProperty({
     required: true,
     type: String,
-    description: SubscriptionProperty.FollowerUserId,
-    example: '11111111-1111-1111-1111-111111111111',
+    description: SubscriptionProperty.Follower.Description.Description,
+    example: SubscriptionProperty.Follower.Description.Example,
   })
-  @IsString()
+  @IsUUID('4', { message: SubscriptionProperty.Follower.Validate.Message })
   public followerUserId: string;
 
   @ApiProperty({
     required: true,
     type: String,
-    description: SubscriptionProperty.FollowerUserId,
-    example: '22222222-2222-2222-2222-222222222222',
+    description: SubscriptionProperty.Followed.Description.Description,
+    example: SubscriptionProperty.Followed.Description.Example,
   })
-  @IsString()
+  @IsUUID('4', { message: SubscriptionProperty.Followed.Validate.Message })
   public followedUserId: string;
 }

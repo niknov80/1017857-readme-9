@@ -3,6 +3,7 @@ import { CreateCommentDto } from '../dto/create-comment.dto';
 import { CommentEntity } from './comment.entity';
 import { CommentFactory } from './comment.factory';
 import { CommentRepository } from './comment.repository';
+import { PaginatedComment } from './paginated-comment.interface';
 
 /**
  * Сервис для работы с комментариями.
@@ -41,7 +42,18 @@ export class CommentService {
    * @param limit Количество на страницу (по умолчанию 50).
    * @returns Список CommentEntity.
    */
-  public async findByPost(postId: string, page = 1, limit = 50): Promise<CommentEntity[]> {
-    return this.commentRepository.findByPost(postId, page, limit);
+  public async findByPost(postId: string, page = 1, limit = 50): Promise<PaginatedComment> {
+    const [comments, totalCount] = await Promise.all([
+      this.commentRepository.findByPost(postId, page, limit),
+      this.commentRepository.countByPost(postId),
+    ]);
+
+    return {
+      items: comments,
+      page,
+      limit,
+      totalCount,
+      totalPages: Math.ceil(totalCount / limit),
+    };
   }
 }
