@@ -4,6 +4,7 @@ import { AuthenticationModule } from '@project/authentication';
 import { BlogUserModule } from '@project/blog-user';
 import { jwtConfig, UserConfigModule } from '@project/config';
 import { PrismaClientModule } from '@project/models';
+import { NotifyModule } from '@project/notify';
 import { UserSubscriptionModule } from '@project/subscriptions';
 
 @Module({
@@ -18,6 +19,7 @@ import { UserSubscriptionModule } from '@project/subscriptions';
     AuthenticationModule,
     UserConfigModule,
     UserSubscriptionModule,
+    NotifyModule,
   ],
   controllers: [],
   providers: [],

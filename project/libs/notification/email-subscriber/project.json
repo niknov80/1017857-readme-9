@@ -1,0 +1,20 @@
+{
+  "name": "email-subscriber",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/notification/email-subscriber/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/notification/email-subscriber",
+        "tsConfig": "libs/notification/email-subscriber/tsconfig.lib.json",
+        "packageJson": "libs/notification/email-subscriber/package.json",
+        "main": "libs/notification/email-subscriber/src/index.ts",
+        "assets": ["libs/notification/email-subscriber/*.md"]
+      }
+    }
+  }
+}

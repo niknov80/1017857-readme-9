@@ -14,6 +14,10 @@ export { PostSortBy } from './lib/types/post-sort-by.enum';
 export { SubscriptionStatus } from './lib/types/subscription-status.enum';
 export { UserRole } from './lib/types/user-role.enum';
 export { RequestWithUser } from './lib/types/request-with-user';
+export { UploadedFile } from './lib/types/uploaded-file.interface';
+export { StoredFile } from './lib/types/stored-file.interface';
+export { Subscriber } from './lib/types/subscriber.interface';
+export { RabbitRouting } from './lib/types/rabbit-routing.enum';
 
 export { EntityFactory } from './lib/interfaces/entity-factory.interface';
 export { StorableEntity } from './lib/interfaces/storable-entity.interface';

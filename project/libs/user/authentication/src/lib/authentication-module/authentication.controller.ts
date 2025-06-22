@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { fillDto } from '@project/helpers';
+import { NotifyService } from '@project/notify';
 import { changePasswordDto } from '../dto/change-password.dto';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { LoginUserDto } from '../dto/login-user.dto';
@@ -13,7 +14,10 @@ import { AuthenticationService } from './authentication.service';
 @ApiTags('authentication')
 @Controller('auth')
 export class AuthenticationController {
-  constructor(private readonly authService: AuthenticationService) {}
+  constructor(
+    private readonly authService: AuthenticationService,
+    private readonly notifyService: NotifyService,
+  ) {}
 
   @Post('register')
   @ApiResponse(AuthenticationResponse.UserCreated)
@@ -21,6 +25,8 @@ export class AuthenticationController {
   @ApiResponse(AuthenticationResponse.BadRequest)
   public async create(@Body() dto: CreateUserDto) {
     const newUser = await this.authService.register(dto);
+    const { email, login: nickname } = newUser;
+    await this.notifyService.registerSubscriber({ email, nickname });
     return fillDto(LoggedUserRdo, newUser.toPOJO());
   }
 
