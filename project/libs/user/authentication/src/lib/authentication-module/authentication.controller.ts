@@ -1,15 +1,18 @@
-import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, HttpCode, HttpStatus, Param, Post, Req, UseGuards } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { fillDto } from '@project/helpers';
 import { NotifyService } from '@project/notify';
 import { changePasswordDto } from '../dto/change-password.dto';
 import { CreateUserDto } from '../dto/create-user.dto';
-import { LoginUserDto } from '../dto/login-user.dto';
 import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { JwtRefreshGuard } from '../guards/jwt-refresh.guard';
+import { LocalAuthGuard } from '../guards/local-auth.guard';
 import { LoggedUserRdo } from '../rdo/logged-user.rdo';
 import { UserRdo } from '../rdo/user.rdo';
 import { AuthenticationResponse } from './authentication.response';
 import { AuthenticationService } from './authentication.service';
+import { RequestWithUser } from './request-with-user.interface';
+import { RequestWithTokenPayload } from './rerquest-with-token-payload.interface';
 
 @ApiTags('authentication')
 @Controller('auth')
@@ -30,15 +33,15 @@ export class AuthenticationController {
     return fillDto(LoggedUserRdo, newUser.toPOJO());
   }
 
+  @UseGuards(LocalAuthGuard)
   @Post('login')
   @ApiResponse(AuthenticationResponse.LoggedSuccess)
   @ApiResponse(AuthenticationResponse.LoggedError)
   @ApiResponse(AuthenticationResponse.BadRequest)
   @ApiResponse(AuthenticationResponse.UserNotFound)
-  public async login(@Body() dto: LoginUserDto) {
-    const verifiedUser = await this.authService.verifyUser(dto);
-    const userToken = await this.authService.createUserToken(verifiedUser);
-    return fillDto(LoggedUserRdo, { ...verifiedUser.toPOJO(), ...userToken });
+  public async login(@Req() { user }: RequestWithUser) {
+    const userToken = await this.authService.createUserToken(user);
+    return fillDto(LoggedUserRdo, { ...user.toPOJO(), ...userToken });
   }
 
   @UseGuards(JwtAuthGuard)
@@ -53,4 +56,21 @@ export class AuthenticationController {
 
   @Post('password')
   public async password(@Body() dto: changePasswordDto) {}
+
+  @UseGuards(JwtRefreshGuard)
+  @Post('refresh')
+  @ApiResponse(AuthenticationResponse.TokensUpdated)
+  @ApiResponse(AuthenticationResponse.BadRequest)
+  @ApiResponse(AuthenticationResponse.UserNotFound)
+  @HttpCode(HttpStatus.OK)
+  public async refreshToken(@Req() { user }: RequestWithUser) {
+    const tokens = await this.authService.createUserToken(user);
+    return fillDto(LoggedUserRdo, { ...user.toPOJO(), ...tokens });
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('check')
+  public async checkToken(@Req() { user: payload }: RequestWithTokenPayload) {
+    return payload;
+  }
 }

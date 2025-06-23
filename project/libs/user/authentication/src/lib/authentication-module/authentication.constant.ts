@@ -71,6 +71,13 @@ export const AuthenticationProperty = {
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZXhhbXBsZS5ydSIsImZpcnN0TmFtZSI6IkFyY2hpYmFsZCIsImxhc3RuYW1lIjoiU2xvbm92c2t5IiwidXNlcklkIjoiNTQ5YWM0YjAtNDQ4OS0zMWViLTk2ZDktOGJkZjdiOGY5MzI2In0.J-Qk6fUpKYuxPzkbGa5ruT9pWdZ0d-tZGsEitl893Ts',
     },
   },
+  RefreshToken: {
+    Description: {
+      Description: 'User refresh token',
+      Example:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZXhhbXBsZS5ydSIsImZpcnN0TmFtZSI6IkFyY2hpYmFsZCIsImxhc3RuYW1lIjoiU2xvbm92c2t5IiwidXNlcklkIjoiNTQ5YWM0YjAtNDQ4OS0zMWViLTk2ZDktOGJkZjdiOGY5MzI2In0.J-Qk6fUpKYuxPzkbGa5ruT9pWdZ0d-tZGsEitl893Ts',
+    },
+  },
   CreatedAt: {
     Description: {
       Description: 'User register date (ISO format)',

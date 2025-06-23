@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { EntityFactory, UploadedFile } from '@project/core';
-import { randomUUID } from 'node:crypto';
 import { CreateFileDto } from '../dto/create-file.dto';
 import { UpdateFileDto } from '../dto/update-file.dto';
 import { FileUploaderEntity } from './file-uploader.entity';
@@ -15,32 +14,29 @@ export class FileUploaderFactory implements EntityFactory<FileUploaderEntity> {
   }
 
   /**
-   * Создание новой сущности из DTO
+   * Создание новой сущности из DTO (при создании нового файла)
    */
   public createFromDto(dto: CreateFileDto): FileUploaderEntity {
     return new FileUploaderEntity({
-      id: dto.hashName ? `${randomUUID()}_${dto.hashName}` : randomUUID(),
       originalName: dto.originalName,
       size: dto.size,
       mimetype: dto.mimetype,
       hashName: dto.hashName,
       path: dto.path,
       subDirectory: dto.subDirectory,
-      createdAt: dto.createdAt,
-      updatedAt: dto.updatedAt,
+      createdAt: dto.createdAt ?? new Date(),
+      updatedAt: dto.updatedAt ?? new Date(),
     });
   }
 
   /**
-   * Обновление существующей сущности на основе DTO
+   * Обновление существующей сущности
    */
   public updateFromDto(entity: FileUploaderEntity, dto: UpdateFileDto): FileUploaderEntity {
-    const updated = {
+    return new FileUploaderEntity({
       ...entity.toPOJO(),
       ...dto,
-      updatedAt: dto.updatedAt ?? new Date(),
-    };
-
-    return new FileUploaderEntity(updated);
+      updatedAt: new Date(),
+    });
   }
 }

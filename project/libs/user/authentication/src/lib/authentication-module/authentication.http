@@ -3,16 +3,16 @@ POST http://localhost:3000/api/auth/register HTTP/1.1
 Content-Type: application/json
 
 {
-  "email": "user222@mail.ru",
-  "login": "user222",
+  "email": "newuser111@mail.ru",
+  "login": "newuser111",
   "password": "1qaz!QAZ"
 }
 
 ###
 
 # Get user by ID
-GET http://localhost:3000/api/auth/e149361d-bcdb-422b-a7a5-96e94b1463c5 HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxMzg0LCJleHAiOjE3NDk2NjE2ODR9.vdwl3C68JqPMvBZpUDn9J_L_R0O3RQ7yc8vI0TLEXsM
+GET http://localhost:3000/api/auth/00bb7077-7c35-47f9-b74d-38901327f534 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzUwNjY1NDY3LCJleHAiOjE3NTA2NjU3Njd9.FB32uSkSHYzluZ7vCMHxG0K4VPLzjnXuYs1eWfMPcDk
 
 ###
 
@@ -24,5 +24,17 @@ Content-Type: application/json
   "email": "smith@mail.ru",
   "password": "1qaz!QAZ"
 }
+
+###
+
+# Get new JWT pair
+POST http://localhost:3000/api/auth/refresh HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzUwNjY1MTA2LCJleHAiOjE3NTMyNTcxMDZ9.jXWQP9bKc9_GFg5Hsd8LY3nPD3OIRhGf8w0LcM9CvFQ
+
+###
+
+# Check user token
+POST http://localhost:3000/api/auth/check HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDQwMzJmYmU0Y2FlYjg2OGM2ZWVjMzYiLCJlbWFpbCI6InVzZXJAbm90Zm91bmQubG9jYWwiLCJyb2xlIjoidXNlciIsImxhc3RuYW1lIjoiU21pdGgiLCJmaXJzdG5hbWUiOiJLZWtzIiwiaWF0IjoxNjgzMTIxMzU1LCJleHAiOjE2ODMxMjE5NTV9.laK4-SAzu_ZMznRVsRWrHxELTGu_P48kpY_CwHPjxtk
 
 ###

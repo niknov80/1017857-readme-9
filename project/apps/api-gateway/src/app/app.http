@@ -1,0 +1,45 @@
+
+
+# Login user by email and password
+POST http://localhost:4000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "smith@mail.ru",
+  "password": "1qaz!QAZ"
+}
+
+###
+
+# Get new JWT pair
+POST http://localhost:4000/api/users/refresh HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwidG9rZW5JZCI6IjE2NmUyNzdlLTVhNmYtNDNhNy04NjkzLTA3ODhhNmMxNzI3YyIsImlhdCI6MTc1MDY4OTMzMSwiZXhwIjoxNzUzMjgxMzMxfQ.9-KVUliTzIpO1rx_dTf7zpfaXBX3w-9AULvvNSiUH98
+
+###
+
+# Create a new post
+POST http://localhost:4000/api/blog HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzUwNjkwMjU3LCJleHAiOjE3NTA2OTA1NTd9.qTi0cSgqvla4b8LgtrRjaGHkV6b2Dgd656O_KDaFwGs
+Content-Type: application/json
+
+{
+  "type": "video",
+  "status": "published",
+  "publicationDate": "2024-06-09T12:00:00.000Z",
+  "tags": ["video", "nestjs"],
+  "videoTitle": "Test Video Title",
+  "videoUrl": "https://youtube.com/watch?v=dQува9WgXcQ"
+}
+###
+
+# Register new user
+POST http://localhost:4000/api/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "newuser2@mail.ru",
+  "login": "newuser2",
+  "password": "1qaz!QAZ"
+}
+
+###

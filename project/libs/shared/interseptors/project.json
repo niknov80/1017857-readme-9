@@ -1,0 +1,20 @@
+{
+  "name": "interseptors",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/interseptors/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/interseptors",
+        "tsConfig": "libs/shared/interseptors/tsconfig.lib.json",
+        "packageJson": "libs/shared/interseptors/package.json",
+        "main": "libs/shared/interseptors/src/index.ts",
+        "assets": ["libs/shared/interseptors/*.md"]
+      }
+    }
+  }
+}
