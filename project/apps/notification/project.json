@@ -32,6 +32,65 @@
           "buildTarget": "notification:build:production"
         }
       }
+    },
+    "db:validate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx dotenv -e libs/notification/notification-models/.env -- npx prisma validate --schema libs/notification/notification-models/prisma/schema.prisma"
+      }
+    },
+    "db:migrate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx dotenv -e libs/notification/notification-models/.env -- npx prisma migrate dev --schema libs/notification/notification-models/prisma/schema.prisma --skip-generate --skip-seed --name {args.name}"
+      }
+    },
+    "db:reset": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx dotenv -e libs/notification/notification-models/.env -- npx prisma migrate reset --schema libs/notification/notification-models/prisma/schema.prisma --force --skip-generate --skip-seed"
+      }
+    },
+    "db:generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx dotenv -e libs/notification/notification-models/.env -- npx prisma generate --schema libs/notification/notification-models/prisma/schema.prisma"
+      }
+    },
+    "db:seed": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx dotenv -e libs/notification/notification-models/.env -- npx ts-node libs/notification/notification-models/prisma/seed.ts",
+        "verbose": true
+      }
+    },
+    "docker:build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/notification",
+        "command": "docker-compose -f notification.compose.dev.yml --env-file notification.env build"
+      }
+    },
+    "docker:up": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/notification",
+        "command": "docker compose --file notification.compose.dev.yml --env-file notification.env --project-name readme-user up -d"
+      }
+    },
+    "docker:down": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "docker-compose -f notification.compose.dev.yml --env-file notification.env down",
+        "cwd": "apps/notification"
+      }
+    },
+    "docker:restart": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx docker:down && nx docker:up",
+        "cwd": "apps/notification"
+      }
     }
   },
   "tags": []

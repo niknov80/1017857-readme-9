@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../../node_modules/.prisma/file-vault-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model File {
+  id           String   @id @default(uuid()) @map("id")
+  originalName String   @map("original_name")
+  size         Int      @map("size")
+  mimetype     String   @map("mimetype")
+  hashName     String   @map("hash_name")
+  path         String   @map("path")
+  subDirectory String   @map("sub_directory")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("files")
+}

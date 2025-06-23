@@ -1,0 +1,57 @@
+services:
+  readme.notification.fakesmtp:
+    image: gessnerfl/fake-smtp-server:2.2.0
+    container_name: readme.notification.fakesmtp
+    hostname: readme.notification.fakesmtp
+    ports:
+      - "8025:8025"   # SMTP‑порт
+      - "8080:8080"   # веб‑интерфейс
+      - "8081:8081"   # дополнительный Tomcat‑порт (иногда)
+      - "1085:8025"     # вспомогательный SMTP‑проброс
+
+  readme.notification.rabbitmq:
+    image: rabbitmq:3.11-management
+    container_name: readme.notification.rabbitmq
+
+    ports:
+      - "1088:15672"
+      - "5672:5672"
+
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  readme.notification.postgres:
+      image: postgres:17-alpine
+      container_name: readme.notification.postgres
+      environment:
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        POSTGRES_DB: ${POSTGRES_DB}
+      ports:
+        - "5437:5432"
+      volumes:
+        - readme.postgres.notification:/var/lib/postgresql/data
+
+      healthcheck:
+        test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+        start_period: 10s
+
+      networks:
+        - readme.network
+
+volumes:
+  readme.postgres.notification:
+
+networks:
+  readme.network:
+      driver: bridge

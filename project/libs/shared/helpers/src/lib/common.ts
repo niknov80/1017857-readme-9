@@ -10,3 +10,7 @@ export function fillDto<T, V>(DtoClass: new () => T, plainObject: V, options?: C
     ...options,
   });
 }
+
+export function getRabbitMQConnectionString({ user, password, host, port }): string {
+  return `amqp://${user}:${password}@${host}:${port}`;
+}
