@@ -44,6 +44,18 @@ model UserSubscription {
   @@map("user_subscriptions")
 }
 
+model RefreshToken {
+  id        String   @id @default(uuid()) @map("id")
+  tokenId   String   @map("token_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  userId    String   @map("user_id")
+  expiresIn DateTime @map("expires_in")
+
+  @@index([tokenId])
+  @@index([userId])
+  @@map("refresh_tokens")
+}
+
 enum SubscriptionStatus {
   ACTIVE
   CANCELLED
