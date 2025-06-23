@@ -1,8 +1,8 @@
 import { AmqpConnection } from '@golevelup/nestjs-rabbitmq';
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
-import { rabbitConfig } from '@project/config';
 import { RabbitRouting } from '@project/core';
+import { rabbitConfig } from '@project/shared-config';
 import { CreateSubscriberDto } from '../dto/create-subscriber.dto';
 
 @Injectable()

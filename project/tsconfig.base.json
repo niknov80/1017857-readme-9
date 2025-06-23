@@ -29,12 +29,14 @@
       "@project/file-vault-config": ["libs/file-vault/file-vault-config/src/index.ts"],
       "@project/file-vault-models": ["libs/file-vault/file-vault-models/src/index.ts"],
       "@project/helpers": ["libs/shared/helpers/src/index.ts"],
+      "@project/interceptors": ["libs/shared/interseptors/src/index.ts"],
       "@project/like": ["libs/content/like/src/index.ts"],
       "@project/models": ["libs/user/models/src/index.ts"],
       "@project/notification-config": ["libs/notification/notification-config/src/index.ts"],
       "@project/notification-models": ["libs/notification/notification-models/src/index.ts"],
       "@project/notify": ["libs/user/notify/src/index.ts"],
       "@project/post": ["libs/content/post/src/index.ts"],
+      "@project/shared-config": ["libs/shared/shared-config/src/index.ts"],
       "@project/subscriptions": ["libs/user/subscriptions/src/index.ts"]
     }
   },

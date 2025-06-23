@@ -1,15 +1,15 @@
 ### Create Post
 POST http://localhost:3001/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzQ5NjYxMzg0LCJleHAiOjE3NDk2NjE2ODR9.vdwl3C68JqPMvBZpUDn9J_L_R0O3RQ7yc8vI0TLEXsM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzUwNjg5Mzc4LCJleHAiOjE3NTA2ODk2Nzh9.VcaOjStxwNMUGg6xp3YmGrpkdqCUgW494TkFe40bDvQ
 
 {
   "type": "video",
   "status": "published",
-  "publicationDate": "2024-06-08T12:00:00.000Z",
-  "tags": ["test", "nestjs"],
+  "publicationDate": "2024-06-09T12:00:00.000Z",
+  "tags": ["video", "nestjs"],
   "videoTitle": "Test Video Title",
-  "videoUrl": "https://youtube.com/watch?v=dQw4w9WgXcQ"
+  "videoUrl": "https://youtube.com/watch?v=dQува9WgXcQ"
 }
 
 ###

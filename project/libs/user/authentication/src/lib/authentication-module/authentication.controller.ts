@@ -12,6 +12,7 @@ import { UserRdo } from '../rdo/user.rdo';
 import { AuthenticationResponse } from './authentication.response';
 import { AuthenticationService } from './authentication.service';
 import { RequestWithUser } from './request-with-user.interface';
+import { RequestWithTokenPayload } from './rerquest-with-token-payload.interface';
 
 @ApiTags('authentication')
 @Controller('auth')
@@ -65,5 +66,11 @@ export class AuthenticationController {
   public async refreshToken(@Req() { user }: RequestWithUser) {
     const tokens = await this.authService.createUserToken(user);
     return fillDto(LoggedUserRdo, { ...user.toPOJO(), ...tokens });
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('check')
+  public async checkToken(@Req() { user: payload }: RequestWithTokenPayload) {
+    return payload;
   }
 }
