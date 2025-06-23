@@ -19,19 +19,18 @@ export class FileUploaderRepository extends BasePostgresRepository<
   }
 
   public async save(entity: FileUploaderEntity): Promise<void> {
-    await this.client.file.create({
-      data: {
-        id: entity.id,
-        originalName: entity.originalName,
-        size: entity.size,
-        mimetype: entity.mimetype,
-        hashName: entity.hashName,
-        path: entity.path,
-        subDirectory: entity.subDirectory,
-        createdAt: entity.createdAt,
-        updatedAt: entity.updatedAt,
-      },
-    });
+    const data = {
+      originalName: entity.originalName,
+      size: entity.size,
+      mimetype: entity.mimetype,
+      hashName: entity.hashName,
+      path: entity.path,
+      subDirectory: entity.subDirectory,
+      createdAt: entity.createdAt,
+      updatedAt: entity.updatedAt,
+    };
+
+    await this.client.file.create({ data });
   }
 
   public async update(entity: FileUploaderEntity): Promise<void> {

@@ -5,6 +5,7 @@ import { jwtConfig } from '@project/config';
 import applicationConfig, { HTTP_CLIENT_MAX_REDIRECTS, HTTP_CLIENT_TIMEOUT } from './app.config';
 import { BlogController } from './blog.controller';
 import { CheckAuthGuard } from './guards/check-auth.guard';
+import { UsersService } from './user.service';
 import { UsersController } from './users.controller';
 
 @Module({
@@ -20,6 +21,6 @@ import { UsersController } from './users.controller';
     }),
   ],
   controllers: [UsersController, BlogController],
-  providers: [CheckAuthGuard],
+  providers: [CheckAuthGuard, UsersService],
 })
 export class AppModule {}

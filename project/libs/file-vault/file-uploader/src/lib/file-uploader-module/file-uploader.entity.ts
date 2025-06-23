@@ -16,19 +16,23 @@ export class FileUploaderEntity extends Entity implements StorableEntity<Uploade
   }
 
   public populate(file?: UploadedFile): void {
-    if (!file) {
-      return;
+    if (!file) return;
+
+    // Только если id корректный — сохраняем, иначе Prisma сам сгенерирует
+    if (file.id && file.id.trim()) {
+      this.id = file.id;
     }
 
-    this.id = file.id ?? '';
     this.originalName = file.originalName;
     this.size = file.size;
     this.mimetype = file.mimetype;
     this.hashName = file.hashName;
     this.path = file.path;
-    this.createdAt = file.createdAt;
-    this.updatedAt = file.updatedAt;
     this.subDirectory = file.subDirectory;
+
+    // createdAt и updatedAt по возможности берутся из входящих данных
+    this.createdAt = file.createdAt ?? new Date();
+    this.updatedAt = file.updatedAt ?? new Date();
   }
 
   public toPOJO(): UploadedFile {

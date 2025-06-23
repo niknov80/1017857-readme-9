@@ -18,4 +18,7 @@ export class UploadedFileRdo {
 
   @Expose()
   public size: number;
+
+  @Expose()
+  path: string;
 }

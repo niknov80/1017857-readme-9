@@ -1,13 +1,18 @@
 import { HttpService } from '@nestjs/axios';
-import { Body, Controller, Post, Req, UseFilters } from '@nestjs/common';
-import { LoginUserDto } from '@project/authentication';
+import { Body, Controller, Post, Req, UploadedFile, UseFilters, UseInterceptors } from '@nestjs/common';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { CreateUserDto, LoginUserDto } from '@project/authentication';
 import { ApplicationServiceURL } from './app.config';
 import { AxiosExceptionFilter } from './filters/axios.exception';
+import { UsersService } from './user.service';
 
 @Controller('users')
 @UseFilters(AxiosExceptionFilter)
 export class UsersController {
-  constructor(private readonly httpService: HttpService) {}
+  constructor(
+    private readonly httpService: HttpService,
+    private readonly usersService: UsersService,
+  ) {}
 
   @Post('login')
   public async login(@Body() loginUserDto: LoginUserDto) {
@@ -24,5 +29,11 @@ export class UsersController {
     });
 
     return data;
+  }
+
+  @Post('register')
+  @UseInterceptors(FileInterceptor('avatar'))
+  public async register(@UploadedFile() avatar: Express.Multer.File, @Body() body: Omit<CreateUserDto, 'avatar'>) {
+    return this.usersService.registerWithAvatar(body, avatar);
   }
 }
