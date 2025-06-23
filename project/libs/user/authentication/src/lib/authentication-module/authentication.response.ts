@@ -34,4 +34,9 @@ export const AuthenticationResponse = {
     status: HttpStatus.OK,
     description: 'User found',
   },
+  TokensUpdated: {
+    type: LoggedUserRdo,
+    status: HttpStatus.OK,
+    description: 'Access and refresh tokens successfully updated',
+  },
 } as const;

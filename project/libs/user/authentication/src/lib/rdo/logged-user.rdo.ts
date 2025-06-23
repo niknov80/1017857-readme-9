@@ -23,4 +23,11 @@ export class LoggedUserRdo {
     example: AuthenticationProperty.AccessToken.Description.Example,
   })
   public accessToken: string;
+
+  @ApiProperty({
+    description: AuthenticationProperty.RefreshToken.Description.Description,
+    example: AuthenticationProperty.RefreshToken.Description.Example,
+  })
+  @Expose()
+  public refreshToken: string;
 }
