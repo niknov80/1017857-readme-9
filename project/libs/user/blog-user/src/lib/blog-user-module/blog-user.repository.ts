@@ -148,4 +148,36 @@ export class BlogUserRepository extends BasePostgresRepository<BlogUserEntity, A
       },
     });
   }
+
+  /**
+   * Увеличить счётчик публикаций (publicationsCount) на 1.
+   *
+   * @param userId - ID пользователя
+   */
+  public async incrementPublicationsCount(userId: string): Promise<void> {
+    await this.client.blogUser.update({
+      where: { id: userId },
+      data: {
+        publicationsCount: { increment: 1 },
+      },
+    });
+  }
+
+  /**
+   * Уменьшить счётчик публикаций (publicationsCount) на 1.
+   * Защищено от отрицательных значений.
+   *
+   * @param userId - ID пользователя
+   */
+  public async decrementPublicationsCount(userId: string): Promise<void> {
+    await this.client.blogUser.updateMany({
+      where: {
+        id: userId,
+        publicationsCount: { gt: 0 },
+      },
+      data: {
+        publicationsCount: { decrement: 1 },
+      },
+    });
+  }
 }

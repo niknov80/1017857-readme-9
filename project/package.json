@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "echo 'Lint skipped'; exit 0"
+    "lint": "npx nx run-many --target=lint --all"
   },
   "private": true,
   "prettier": {

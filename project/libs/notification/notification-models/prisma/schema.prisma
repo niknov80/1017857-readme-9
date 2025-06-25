@@ -15,3 +15,11 @@ model Subscriber {
 
   @@map("subscribers")
 }
+
+model MailingStatus {
+  id         String   @id @default(uuid()) @map("id")
+  userId     String   @unique @map("user_id")
+  lastSentAt DateTime @map("last_sent_at")
+
+  @@map("mailing_statuses")
+}

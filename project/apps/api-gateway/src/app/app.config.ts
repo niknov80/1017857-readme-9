@@ -7,7 +7,10 @@ const ENVIRONMENTS = ['development', 'production', 'stage'] as const;
 export enum ApplicationServiceURL {
   Users = 'http://localhost:3000/api/auth',
   Blog = 'http://localhost:3001/api/posts',
+  Comments = 'http://localhost:3001/api/comments',
+  Likes = 'http://localhost:3001/api/likes',
   Files = 'http://localhost:3002/api/files',
+  Notify = 'http://localhost:3003/api/digest',
 }
 
 export const HTTP_CLIENT_MAX_REDIRECTS = 5;
