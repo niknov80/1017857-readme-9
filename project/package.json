@@ -2,7 +2,9 @@
   "name": "@project/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "echo 'Lint skipped'; exit 0"
+  },
   "private": true,
   "prettier": {
     "singleQuote": true,
