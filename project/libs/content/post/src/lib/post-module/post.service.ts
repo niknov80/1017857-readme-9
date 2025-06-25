@@ -1,4 +1,5 @@
-import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
+import { ForbiddenException, Injectable, Logger, NotFoundException } from '@nestjs/common';
+import { ContentNotifyService } from '@project/content-notify';
 import { PostType } from '@project/core';
 import { CreatePostDto } from '../dto/create-post-dto/create-post.dto';
 import { UpdatePostDto } from '../dto/update-post-dto/update-post.dto';
@@ -10,14 +11,26 @@ import { PostRepository } from './post.repository';
 
 @Injectable()
 export class PostService {
+  private readonly logger = new Logger(PostService.name);
+
   constructor(
     private readonly postRepository: PostRepository,
     private readonly postFactory: PostFactory,
+    private readonly notifyService: ContentNotifyService,
   ) {}
 
   public async create(dto: CreatePostDto, userId: string): Promise<PostEntity> {
     const post = this.postFactory.createPostFromDto(dto, userId);
     await this.postRepository.save(post);
+
+    const postTitle = post.textTitle ?? post.videoTitle ?? post.quoteText ?? post.linkDescription ?? 'Без названия';
+
+    await this.notifyService.sendPostCreated({
+      userId,
+      postId: post.id,
+      postTitle,
+    });
+    this.logger.log(`Sent postCreated event for userId: ${userId}`);
     return post;
   }
 
@@ -50,6 +63,7 @@ export class PostService {
     }
 
     await this.postRepository.deleteById(id);
+    await this.notifyService.sendPostDeleted({ userId });
   }
 
   public async getById(id: string): Promise<PostEntity> {

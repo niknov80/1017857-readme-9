@@ -1,37 +1,3 @@
-
-
-# Login user by email and password
-POST http://localhost:4000/api/users/login HTTP/1.1
-Content-Type: application/json
-
-{
-  "email": "smith@mail.ru",
-  "password": "1qaz!QAZ"
-}
-
-###
-
-# Get new JWT pair
-POST http://localhost:4000/api/users/refresh HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwidG9rZW5JZCI6IjE2NmUyNzdlLTVhNmYtNDNhNy04NjkzLTA3ODhhNmMxNzI3YyIsImlhdCI6MTc1MDY4OTMzMSwiZXhwIjoxNzUzMjgxMzMxfQ.9-KVUliTzIpO1rx_dTf7zpfaXBX3w-9AULvvNSiUH98
-
-###
-
-# Create a new post
-POST http://localhost:4000/api/blog HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTQ5MzYxZC1iY2RiLTQyMmItYTdhNS05NmU5NGIxNDYzYzUiLCJlbWFpbCI6InNtaXRoQG1haWwucnUiLCJsb2dpbiI6InNtaXRoIiwiaWF0IjoxNzUwNjkwMjU3LCJleHAiOjE3NTA2OTA1NTd9.qTi0cSgqvla4b8LgtrRjaGHkV6b2Dgd656O_KDaFwGs
-Content-Type: application/json
-
-{
-  "type": "video",
-  "status": "published",
-  "publicationDate": "2024-06-09T12:00:00.000Z",
-  "tags": ["video", "nestjs"],
-  "videoTitle": "Test Video Title",
-  "videoUrl": "https://youtube.com/watch?v=dQува9WgXcQ"
-}
-###
-
 # Register new user
 POST http://localhost:4000/api/users/register HTTP/1.1
 Content-Type: application/json
@@ -41,5 +7,149 @@ Content-Type: application/json
   "login": "newuser2",
   "password": "1qaz!QAZ"
 }
+
+###
+
+# Login user by email and password
+POST http://localhost:4000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "testavatar222@mail.ru",
+  "password": "1Qaz!qaz"
+}
+
+###
+
+# Get user by ID
+GET http://localhost:4000/api/users/d43871ad-8981-4bea-a226-640c4c611c3e HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDcwNTUzOCwiZXhwIjoxNzUwNzA1ODM4fQ.rp-Sf_5bO8IyP_uxbDRMKhOqQnMbbZ8wwXyTjz3TbzU
+
+
+###
+
+# Get new JWT pair
+POST http://localhost:4000/api/users/refresh HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsInRva2VuSWQiOiJiOWZlY2RkMC0xODFiLTQ5N2UtOWJhMC0yOTQxOTFjOGE1ZjkiLCJpYXQiOjE3NTA3NzE3OTIsImV4cCI6MTc1MzM2Mzc5Mn0.eoM3QJnPeUCdxez5osLCkc0AdPc6yRrH0HDonnSMPVc
+
+###
+
+# Check user token
+POST http://localhost:4000/api/users/check HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDcwNTE4NCwiZXhwIjoxNzUwNzA1NDg0fQ.Ts45u4qDi-xqcbkmfOAMOzn3cHPKYYqzQlyTpWDcyOY
+
+###
+
+# Create a new post
+POST http://localhost:4000/api/posts HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDgzMzUzMiwiZXhwIjoxNzUwODMzODMyfQ.lZTZlTlkPNOx3-dffdoB7chgDeWVFoP_pP8UUsedqxs
+Content-Type: application/json
+
+{
+  "type": "video",
+  "status": "published",
+  "publicationDate": "2025-06-25T06:37:00.000Z",
+  "tags": ["video", "nestjs"],
+  "videoTitle": "The new Video Title 03",
+  "videoUrl": "https://youtube.com/watch?v=srety9WgXcQ"
+}
+
+###
+
+### Update Post
+PUT http://localhost:4000/api/posts/499c62f0-51ac-4635-af6a-93dbe8dd9226
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc1ODM5OSwiZXhwIjoxNzUwNzU4Njk5fQ.meymnjbEWc5_c_2n60esSvv6IG6aaTr_a_kE2VqfYfQ
+
+{
+  "status": "published",
+  "tags": ["updated", "tag"],
+  "videoTitle": "Updated Video Title 123",
+  "videoUrl": "https://youtube.com/watch?v=dQува9WgXcQ"
+}
+
+###
+
+### Delete Post
+DELETE http://localhost:4000/api/posts/8b91ccb5-8f78-4524-a1ce-6e001f3893d6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc5MTI0OCwiZXhwIjoxNzUwNzkxNTQ4fQ.LjHDY44lzMflCPbpDUZqmQqAdXCU9kp6SVJo0Kz09oY
+
+###
+
+### Get Post by ID
+GET http://localhost:4000/api/posts/0520da17-6455-49e7-835a-e9c233999add
+
+###
+
+### Get Feed
+GET http://localhost:4000/api/posts/feed?page=1&limit=10&sortBy=date
+
+###
+
+### Get Posts by User
+GET http://localhost:4000/api/posts/user/6d308040-96a2-4162-bea6-2338e9976540?page=1&limit=10&sortBy=date
+
+###
+
+### Get Drafts by User
+GET http://localhost:4000/api/posts/user/6d308040-96a2-4162-bea6-2338e9976540/drafts
+
+###
+
+### Get Posts by Tag
+GET http://localhost:4000/api/posts/tag/video?page=1&limit=10
+
+###
+
+### Get Posts by Type
+GET http://localhost:4000/api/posts/type/video?page=1&limit=10
+
+###
+
+### Create comment
+POST http://localhost:4000/api/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc3NDI2MiwiZXhwIjoxNzUwNzc0NTYyfQ.Zn4Xx8VxeBvJtT_itok0grGD808v-m7RHxV7lcHg7ek
+
+{
+  "postId": "8b91ccb5-8f78-4524-a1ce-6e001f3893d6",
+  "text": "Отличный пост! Спасибо за информацию."
+}
+
+###
+
+### Delete comment
+DELETE http://localhost:4000/api/comments/eada7ac8-25ed-498b-9db5-77bf3a5ca7a6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc3NDI2MiwiZXhwIjoxNzUwNzc0NTYyfQ.Zn4Xx8VxeBvJtT_itok0grGD808v-m7RHxV7lcHg7ek
+
+###
+
+### Get comments by post
+GET http://localhost:4000/api/comments/post/a673fe98-bbc9-442e-a3dd-d546b7e721cf
+
+###
+
+### Like post
+POST http://localhost:4000/api/likes/8b91ccb5-8f78-4524-a1ce-6e001f3893d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc3NDk2NywiZXhwIjoxNzUwNzc1MjY3fQ.CGhEKKmWxuexOcZe0JfMWjC3nDrRX5N7aW76PCQgAsE
+
+###
+
+### Dislike post
+DELETE http://localhost:4000/api/likes/8b91ccb5-8f78-4524-a1ce-6e001f3893d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc3NDk2NywiZXhwIjoxNzUwNzc1MjY3fQ.CGhEKKmWxuexOcZe0JfMWjC3nDrRX5N7aW76PCQgAsE
+
+###
+
+### Is liked?
+GET http://localhost:4000/api/likes/8b91ccb5-8f78-4524-a1ce-6e001f3893d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDc3NDk2NywiZXhwIjoxNzUwNzc1MjY3fQ.CGhEKKmWxuexOcZe0JfMWjC3nDrRX5N7aW76PCQgAsE
+
+###
+
+### Send publication digest email to subscriber
+POST http://localhost:4000/api/notification/digest HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNDM4NzFhZC04OTgxLTRiZWEtYTIyNi02NDBjNGM2MTFjM2UiLCJlbWFpbCI6InRlc3RhdmF0YXIyMjJAbWFpbC5ydSIsImxvZ2luIjoiYXZhdGFydXNlcjIyMiIsImlhdCI6MTc1MDgzMzUzMiwiZXhwIjoxNzUwODMzODMyfQ.lZTZlTlkPNOx3-dffdoB7chgDeWVFoP_pP8UUsedqxs
 
 ###

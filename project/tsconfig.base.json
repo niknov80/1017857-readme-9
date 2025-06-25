@@ -22,6 +22,7 @@
       "@project/config": ["libs/user/config/src/index.ts"],
       "@project/content-config": ["libs/content/config/src/index.ts"],
       "@project/content-models": ["libs/content/content-models/src/index.ts"],
+      "@project/content-notify": ["libs/content/content-notify/src/index.ts"],
       "@project/core": ["libs/shared/core/src/index.ts"],
       "@project/data-access": ["libs/shared/data-access/src/index.ts"],
       "@project/email-subscriber": ["libs/notification/email-subscriber/src/index.ts"],
