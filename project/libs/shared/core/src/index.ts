@@ -26,3 +26,4 @@ export { TokenPayload } from './lib/interfaces/token-payload.interface';
 export { Paginated } from './lib/interfaces/paginated.inerface';
 export { JwtToken } from './lib/interfaces/jwt-token.interface';
 export { RefreshTokenPayload } from './lib/interfaces/refresh-token-payload.inreface';
+export { AuthRequest } from './lib/types/auth-request.interface';

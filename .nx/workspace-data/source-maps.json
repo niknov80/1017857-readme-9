@@ -1,0 +1,3148 @@
+{
+  "project/libs/content/comment": {
+    "root": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/content/comment/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/content/comment/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/content/config": {
+    "root": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/content/config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/content/config/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/content/content-models": {
+    "root": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/content/content-models/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/content/content-models/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/content/like": {
+    "root": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/content/like/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/content/like/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/content/post": {
+    "root": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/content/post/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/content/post/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/file-vault/file-uploader": {
+    "root": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/file-vault/file-uploader/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/file-vault/file-uploader/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/file-vault/file-vault-config": {
+    "root": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/file-vault/file-vault-config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/file-vault/file-vault-config/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/file-vault/file-vault-models": {
+    "root": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/file-vault/file-vault-models/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/file-vault/file-vault-models/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/notification/email-subscriber": {
+    "root": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/notification/email-subscriber/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/notification/email-subscriber/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/notification/notification-config": {
+    "root": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/notification/notification-config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/notification/notification-config/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/notification/notification-models": {
+    "root": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/notification/notification-models/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/notification/notification-models/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/shared/core": {
+    "root": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/shared/core/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/shared/core/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/shared/data-access": {
+    "root": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/shared/data-access/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/shared/data-access/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/shared/helpers": {
+    "root": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/shared/helpers/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/shared/helpers/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/shared/interseptors": {
+    "root": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/shared/interseptors/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/shared/interseptors/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/shared/shared-config": {
+    "root": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/shared/shared-config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/shared/shared-config/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/authentication": {
+    "root": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/authentication/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/authentication/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/blog-user": {
+    "root": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/blog-user/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/blog-user/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/config": {
+    "root": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/config/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/models": {
+    "root": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/models/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/models/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/notify": {
+    "root": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/notify/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/notify/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/libs/user/subscriptions": {
+    "root": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "project/libs/user/subscriptions/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "project/libs/user/subscriptions/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/apps/api-gateway": {
+    "root": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "project/apps/api-gateway/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/apps/content": {
+    "root": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.verbose": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.cwd": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.cwd": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.executor": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.command": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.cwd": [
+      "project/apps/content/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/apps/file-vault": {
+    "root": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.verbose": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.cwd": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.cwd": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.executor": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.command": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.cwd": [
+      "project/apps/file-vault/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/apps/notification": {
+    "root": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.verbose": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.cwd": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:build.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options.cwd": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.cwd": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.executor": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.command": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.cwd": [
+      "project/apps/notification/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "project/apps/user": {
+    "root": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.args": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:validate.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:migrate.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:reset.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:generate.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.db:seed.options.verbose": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:up.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:down.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.executor": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.docker:restart.options.command": [
+      "project/apps/user/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

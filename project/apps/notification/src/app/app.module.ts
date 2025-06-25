@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { jwtConfig } from '@project/config';
-import { EmailSubscriberModule } from '@project/email-subscriber';
+import { EmailSubscriberModule, MailingModule } from '@project/email-subscriber';
 import { NotificationConfigModule } from '@project/notification-config';
+import { PrismaNotificationClientModule } from '@project/notification-models';
 
 @Module({
   imports: [
@@ -13,6 +14,8 @@ import { NotificationConfigModule } from '@project/notification-config';
     }),
     NotificationConfigModule,
     EmailSubscriberModule,
+    MailingModule,
+    PrismaNotificationClientModule,
   ],
   controllers: [],
   providers: [],
