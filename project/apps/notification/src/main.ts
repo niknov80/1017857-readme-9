@@ -1,13 +1,8 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as dotenv from 'dotenv';
-import { ConfigDocumentBuilder, GLOBAL_PREFIX } from './app/app.const';
+import { ConfigDocumentBuilder, DEFAULT_PORT, GLOBAL_PREFIX } from './app/app.const';
 import { AppModule } from './app/app.module';
 
 dotenv.config();
@@ -21,15 +16,14 @@ async function bootstrap() {
     .setVersion(ConfigDocumentBuilder.VERSION)
     .build();
 
-  const globalPrefix = GLOBAL_PREFIX;
-  app.setGlobalPrefix(globalPrefix);
+  app.setGlobalPrefix(GLOBAL_PREFIX);
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
 
-  const port = process.env.PORT || 3003;
+  const port = process.env.PORT || DEFAULT_PORT;
   await app.listen(port);
-  Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`);
+  Logger.log(`🚀 Application is running on: http://localhost:${port}/${GLOBAL_PREFIX}`);
 }
 
 bootstrap();

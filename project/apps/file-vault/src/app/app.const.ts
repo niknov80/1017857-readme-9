@@ -1,4 +1,5 @@
 export const GLOBAL_PREFIX = 'api';
+export const DEFAULT_PORT = 3002;
 
 export enum ConfigDocumentBuilder {
   TITLE = 'The «File Vault» service',

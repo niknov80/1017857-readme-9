@@ -1,10 +1,13 @@
 import { registerAs } from '@nestjs/config';
 import * as Joi from 'joi';
 
-const DEFAULT_PORT = 3003;
+enum DefaultPort {
+  App = 3003,
+  Rabbit = 5672,
+  Smtp = 25,
+}
+
 const ENVIRONMENTS = ['development', 'production', 'stage'] as const;
-const DEFAULT_RABBIT_PORT = 5672;
-const DEFAULT_SMTP_PORT = 25;
 
 type Environment = (typeof ENVIRONMENTS)[number];
 
@@ -32,18 +35,18 @@ const validationSchema = Joi.object({
   environment: Joi.string()
     .valid(...ENVIRONMENTS)
     .required(),
-  port: Joi.number().port().default(DEFAULT_PORT),
+  port: Joi.number().port().default(DefaultPort.App),
   rabbit: Joi.object({
     host: Joi.string().valid().hostname().required(),
     password: Joi.string().required(),
-    port: Joi.number().port().default(DEFAULT_RABBIT_PORT),
+    port: Joi.number().port().default(DefaultPort.Rabbit),
     user: Joi.string().required(),
     queue: Joi.string().required(),
     exchange: Joi.string().required(),
   }),
   mail: Joi.object({
     host: Joi.string().valid().hostname().required(),
-    port: Joi.number().port().default(DEFAULT_SMTP_PORT),
+    port: Joi.number().port().default(DefaultPort.Smtp),
     user: Joi.string().optional().allow('', null),
     password: Joi.string().optional().allow('', null),
     from: Joi.string().required(),
@@ -59,7 +62,7 @@ function validateConfig(config: NotificationConfig): void {
 
 function getConfig(): NotificationConfig {
   const environment = process.env.NODE_ENV as Environment;
-  const port = parseInt(process.env.PORT || `${DEFAULT_PORT}`, 10);
+  const port = parseInt(process.env.PORT || `${DefaultPort.App}`, 10);
   const rabbitHost = process.env.RABBIT_HOST;
   const rabbitPassword = process.env.RABBIT_PASSWORD;
   const rabbitUser = process.env.RABBIT_USER;
@@ -67,7 +70,7 @@ function getConfig(): NotificationConfig {
   const rabbitExchange = process.env.RABBIT_EXCHANGE;
 
   const mailHost = process.env.MAIL_SMTP_HOST;
-  const mailPort = parseInt(process.env.MAIL_SMTP_PORT ?? DEFAULT_SMTP_PORT.toString(), 10);
+  const mailPort = parseInt(process.env.MAIL_SMTP_PORT ?? DefaultPort.Smtp.toString(), 10);
   const mailUser = process.env.MAIL_USER_NAME;
   const mailPassword = process.env.MAIL_USER_PASSWORD;
   const mailFrom = process.env.MAIL_FROM;
@@ -85,7 +88,7 @@ function getConfig(): NotificationConfig {
       user: rabbitUser,
       queue: rabbitQueue,
       exchange: rabbitExchange,
-      port: parseInt(process.env.RABBIT_PORT ?? DEFAULT_RABBIT_PORT.toString(), 10),
+      port: parseInt(process.env.RABBIT_PORT ?? DefaultPort.Rabbit.toString(), 10),
     },
     mail: {
       host: mailHost,

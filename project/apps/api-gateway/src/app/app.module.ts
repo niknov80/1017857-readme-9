@@ -2,7 +2,7 @@ import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { jwtConfig } from '@project/config';
-import applicationConfig, { HTTP_CLIENT_MAX_REDIRECTS, HTTP_CLIENT_TIMEOUT } from './app.config';
+import applicationConfig, { HttpClient } from './app.config';
 import { BlogController } from './blog.controller';
 import { CommentsController } from './comment.controller';
 import { CheckAuthGuard } from './guards/check-auth.guard';
@@ -19,8 +19,8 @@ import { UsersController } from './users.controller';
       load: [jwtConfig, applicationConfig],
     }),
     HttpModule.register({
-      timeout: HTTP_CLIENT_TIMEOUT,
-      maxRedirects: HTTP_CLIENT_MAX_REDIRECTS,
+      timeout: HttpClient.Timeout,
+      maxRedirects: HttpClient.MaxRedirects,
     }),
   ],
   controllers: [UsersController, BlogController, CommentsController, LikesController, NotificationController],

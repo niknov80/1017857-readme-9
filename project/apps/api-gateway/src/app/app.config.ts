@@ -4,6 +4,11 @@ import * as Joi from 'joi';
 const DEFAULT_PORT = 4000;
 const ENVIRONMENTS = ['development', 'production', 'stage'] as const;
 
+export enum HttpClient {
+  MaxRedirects = 5,
+  Timeout = 3000,
+}
+
 export enum ApplicationServiceURL {
   Users = 'http://localhost:3000/api/auth',
   Blog = 'http://localhost:3001/api/posts',
@@ -12,9 +17,6 @@ export enum ApplicationServiceURL {
   Files = 'http://localhost:3002/api/files',
   Notify = 'http://localhost:3003/api/digest',
 }
-
-export const HTTP_CLIENT_MAX_REDIRECTS = 5;
-export const HTTP_CLIENT_TIMEOUT = 3000;
 
 type Environment = (typeof ENVIRONMENTS)[number];
 

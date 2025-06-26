@@ -1,8 +1,3 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
@@ -19,8 +14,7 @@ async function bootstrap() {
     .setVersion(ConfigDocumentBuilder.VERSION)
     .build();
 
-  const globalPrefix = GLOBAL_PREFIX;
-  app.setGlobalPrefix(globalPrefix);
+  app.setGlobalPrefix(GLOBAL_PREFIX);
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
@@ -35,7 +29,7 @@ async function bootstrap() {
   const port = configService.get('application.port');
 
   await app.listen(port);
-  Logger.log(`🚀 Application "User" is running on: http://localhost:${port}/${globalPrefix}`);
+  Logger.log(`🚀 Application "User" is running on: http://localhost:${port}/${GLOBAL_PREFIX}`);
 }
 
 bootstrap();

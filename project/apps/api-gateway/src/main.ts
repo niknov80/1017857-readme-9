@@ -26,8 +26,7 @@ async function bootstrap() {
     .setVersion(ConfigDocumentBuilder.VERSION)
     .build();
 
-  const globalPrefix = GLOBAL_PREFIX;
-  app.setGlobalPrefix(globalPrefix);
+  app.setGlobalPrefix(GLOBAL_PREFIX);
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
@@ -39,7 +38,7 @@ async function bootstrap() {
 
   Logger.log(`📦 Loaded PORT from configService: ${port}`);
   await app.listen(port);
-  Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`);
+  Logger.log(`🚀 Application is running on: http://localhost:${port}/${GLOBAL_PREFIX}`);
 }
 
 bootstrap();
